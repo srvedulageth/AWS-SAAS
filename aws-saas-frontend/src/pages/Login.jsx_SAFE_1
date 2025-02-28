@@ -1,0 +1,97 @@
+import { useState } from "react";
+import { Amplify } from "aws-amplify";
+import { signIn } from "aws-amplify/auth";
+
+const Login = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [verificationCode, setVerificationCode] = useState("");
+    const [requiresConfirmation, setRequiresConfirmation] = useState(false);
+
+    const handleLogin = async () => {
+        try {
+            //const user = await signIn(email, password, options: {'USER_PASSWORD_AUTH'});
+	    //const user = await signIn(email, password, { authFlowType: 'USER_PASSWORD_AUTH' });
+	    const user = await signIn({
+		username: email,
+                password: password,
+                options: { authFlowType: 'USER_PASSWORD_AUTH' }
+            });
+	    if (user.nextStep?.signInStep === "CONFIRM_SIGN_UP") {
+                console.log("User needs to confirm their sign-up. Redirecting to confirmation step...");
+                // Here, navigate to the confirmation page or show an input for the confirmation code
+	        setRequiresConfirmation(true);
+            } else if (user.isSignedIn) {
+                console.log("Successfully signed in:", user);
+                // Proceed to the dashboard or home page
+	        alert("Login successful!");
+            } else {
+                console.log("Unexpected next step:", user.nextStep);
+            }
+        } catch (error) {
+            console.error('Error signing in:', error);
+	    alert("Login failed. Please check your credentials.");
+        }
+    };
+
+    const confirmSignUp = async () => {
+        try {
+            await confirmSignUp({
+                username: email,
+                confirmationCode: verificationCode,
+            });
+            alert("Verification successful! You can now log in.");
+            setRequiresConfirmation(false);
+        } catch (error) {
+            console.error("Error confirming sign-up:", error);
+            alert("Error confirming sign-up. Please try again.");
+        }
+    };
+
+    const resendVerificationCode = async () => {
+        try {
+            await resendSignUpCode({ username: email });
+            alert("New verification code sent!");
+        } catch (error) {
+            console.error("Error resending code:", error);
+            alert("Error resending code. Please try again.");
+        }
+    };
+
+    return (
+        <div>
+            <h2>{requiresConfirmation ? "Confirm Your Email" : "Login"}</h2>
+            <input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+            />
+            {!requiresConfirmation && (
+                <>
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <button onClick={handleLogin}>Login</button>
+                </>
+            )}
+            {requiresConfirmation && (
+                <>
+                    <input
+                        type="text"
+                        placeholder="Enter verification code"
+                        value={verificationCode}
+                        onChange={(e) => setVerificationCode(e.target.value)}
+                    />
+                    <button onClick={confirmSignUp}>Confirm</button>
+                    <button onClick={resendVerificationCode}>Resend Code</button>
+                </>
+            )}
+        </div>
+    );
+};
+
+export default Login;

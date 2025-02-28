@@ -14,7 +14,7 @@ const awsExports = {
 	  },  // ✅ Ensure loginWith exists
 	},
         region: 'us-west-1',
-        authenticationFlowType: 'USER_PASSWORD_AUTH',
+        authFlowType: 'USER_PASSWORD_AUTH',
         oauth: {
             domain: '',
             scope: [],
