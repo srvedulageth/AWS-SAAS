@@ -1,0 +1,27 @@
+import { Amplify } from "aws-amplify";
+
+Amplify.configure({
+    Auth: {
+        region: 'us-west-1',
+        userPoolId: 'us-west-1_mJ0nwfHd2',
+        userPoolWebClientId: '5132d0n28h947jm6gv4t06n2vl',
+        authenticationFlowType: 'USER_PASSWORD_AUTH',
+
+	oauth: {
+           domain: 'https://us-west-1mj0nwfhd2.auth.us-west-1.amazoncognito.com', // Replace with your Cognito domain
+           scope: ['openid', 'email', 'profile'], // Google login scopes
+           redirectSignIn: 'http://localhost:5173/', // Adjust for production
+           redirectSignOut: 'http://localhost:5173/',
+           responseType: 'code', // Use 'code' for Authorization Code Grant
+           clientId: 'sitaram.vedula@gmail.com', // Replace with your Google Client ID
+        },
+    },
+    Storage: {
+        AWSS3: {
+            bucket: import.meta.env.VITE_S3_BUCKET_NAME,
+            region: import.meta.env.VITE_COGNITO_REGION,
+        },
+    },
+});
+
+export default Amplify;

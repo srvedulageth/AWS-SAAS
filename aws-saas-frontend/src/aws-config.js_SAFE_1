@@ -1,0 +1,40 @@
+import { Amplify } from "aws-amplify";
+
+const awsExports = {
+    Auth: {
+        region: 'us-west-1',
+        userPoolId: 'us-west-1_mJ0nwfHd2',
+        userPoolWebClientId: '5132d0n28h947jm6gv4t06n2vl',
+        authenticationFlowType: 'USER_PASSWORD_AUTH',
+	Cognito: {
+          userPoolId: 'us-west-1_mJ0nwfHd2',
+          userPoolWebClientId: '5132d0n28h947jm6gv4t06n2vl',
+          loginWith: { oauth: {} },  // ✅ Ensure loginWith exists
+	},
+        oauth: {
+            domain: '',
+            scope: [],
+            redirectSignIn: '',
+            redirectSignOut: '',
+            responseType: ''
+        }
+    },
+    Storage: {
+        AWSS3: {
+            bucket: import.meta.env.VITE_S3_BUCKET_NAME,
+            region: import.meta.env.VITE_COGNITO_REGION,
+        },
+    },
+};
+
+// Debugging logs
+console.log("Final awsExports Object:", JSON.stringify(awsExports, null, 2));
+
+try {
+    Amplify.configure({ ...awsExports });
+    console.log("✅ Amplify Successfully Configured!");
+} catch (error) {
+    console.error("❌ Error configuring Amplify:", error);
+}
+
+export default Amplify;

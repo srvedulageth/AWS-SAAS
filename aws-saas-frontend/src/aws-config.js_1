@@ -1,0 +1,29 @@
+import { Amplify } from "aws-amplify";
+
+const awsExports = {
+    Auth: {
+	    Cognito: {
+                region: 'us-west-1',
+                userPoolId: 'us-west-1_mJ0nwfHd2',
+                userPoolWebClientId: '5132d0n28h947jm6gv4t06n2vl',
+                authenticationFlowType: 'USER_PASSWORD_AUTH',
+                aws_cognito_identity_pool_id: undefined,  // Prevent Amplify from expecting federated identity pools
+		username: 'true',
+		email: 'true', // Optional
+		phone: 'true', // Optional
+	    }
+    },
+    Storage: {
+        AWSS3: {
+            bucket: import.meta.env.VITE_S3_BUCKET_NAME,
+            region: import.meta.env.VITE_COGNITO_REGION,
+        },
+    },
+};
+
+console.log("Amplify Configuration:", awsExports);
+Amplify.configure(awsExports);
+
+console.trace('Trace after Amplify.configure()');
+
+export default Amplify;
