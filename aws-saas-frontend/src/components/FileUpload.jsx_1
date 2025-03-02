@@ -3,7 +3,7 @@ import { Amplify } from "aws-amplify";
 import { uploadData, getUrl } from "aws-amplify/storage";
 import awsExports from "../aws-exports";
 
-// Configure Amplify with your aws-exports
+console.log("Amplify Storage Config:", awsExports.Storage);
 Amplify.configure(awsExports);
 
 const FileUpload = () => {
@@ -23,34 +23,30 @@ const FileUpload = () => {
 
         setUploading(true);
         try {
-            // Generate a unique file name to avoid conflicts
             const fileName = `uploads/${Date.now()}-${file.name}`;
-            console.log("File name (key):", fileName);
+	    console.log("File name (key):", fileName);
             console.log("File object:", file);
 
-            // Prepare the operation
-            const operation = uploadData({
-                path: fileName,  // Key (path) where the file will be uploaded in S3
-                data: file,      // The file object to be uploaded
-            });
+            console.log("Amplify Storage Configuration:", awsExports.Storage);
 
-            // Wait for the upload operation to complete
-            const result = await operation.result;
-            console.log("Upload result:", result);
+            const result = await uploadData(fileName, file, {
+		    contentType: file.type,
+		    accessLevel: "public"
+	    });
 
-            if (result?.path) {
-                console.log("Upload successful");
 
-                // Get the URL of the uploaded file
-                const urlResult = await getUrl({ key: result.path });
-                console.log("URL", urlResult.url.origin);
-                setFileUrl(urlResult.url.origin); // Extract and set only the URL string
+	    console.log("Upload result:", result); // Log result object
 
+            if (result?.key) {
+		    console.log("Successful");
+                const url = await getUrl({ key: result.key });
+                setFileUrl(url.url); // Extract the actual URL
                 alert("File uploaded successfully!");
-            } else {
-                console.log("Upload error: result is missing the path", result);
-                alert("File upload has issues!");
             }
+	    else {
+                console.log("Upload error:", result);
+                alert("File upload has issues!");
+	    }
         } catch (error) {
             console.error("Upload error:", error);
             alert("File upload failed!");

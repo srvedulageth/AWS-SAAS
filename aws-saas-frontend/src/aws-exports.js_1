@@ -12,7 +12,7 @@ const awsExports = {
                 responseType: 'code',
 	     }
 	  },  // ✅ Ensure loginWith exists
-          identityPoolId: 'us-west-1:0e0ea56e-08c4-4457-9bd9-ff65d4d0f6eb',
+          identityPoolId: 'us-west-1:0decad8d-8c20-40c1-987d-1aa51e9a32b6',
 	},
         region: 'us-west-1',
         authFlowType: 'USER_PASSWORD_AUTH',
