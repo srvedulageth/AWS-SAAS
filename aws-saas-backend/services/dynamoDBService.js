@@ -1,24 +1,53 @@
-const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
-const { DynamoDBDocumentClient, PutCommand, GetCommand } = require("@aws-sdk/lib-dynamodb");
+const AWS = require("aws-sdk");
 
-const client = new DynamoDBClient({ region: process.env.AWS_REGION });
-const docClient = DynamoDBDocumentClient.from(client);
+AWS.config.update({
+    region: process.env.AWS_REGION,
+});
 
-const createUser = async (user) => {
-    const params = {
-        TableName: process.env.DYNAMODB_TABLE,
-        Item: user,
-    };
-    await docClient.send(new PutCommand(params));
+const dynamoDB = new AWS.DynamoDB.DocumentClient();
+const TABLE_NAME = process.env.DYNAMODB_TABLE_NAME;
+console.log("DynamoDB Table Name:", TABLE_NAME);
+if (!TABLE_NAME) {
+    throw new Error("DYNAMODB_TABLE_NAME is not set in environment variables");
+}
+
+// Get all items from DynamoDB
+exports.getItems = async (req, res) => {
+    try {
+        const params = {
+            TableName: TABLE_NAME,
+        };
+
+        const data = await dynamoDB.scan(params).promise();
+        res.json(data.Items);
+    } catch (error) {
+        console.error("DynamoDB Get Error:", error);
+        res.status(500).json({ error: error.message });
+    }
 };
 
-const getUser = async (userId) => {
-    const params = {
-        TableName: process.env.DYNAMODB_TABLE,
-        Key: { userId },
-    };
-    const result = await docClient.send(new GetCommand(params));
-    return result.Item;
-};
+// Add an item to DynamoDB
+exports.addItem = async (req, res) => {
+    try {
+        const { id, name, description } = req.body;
 
-module.exports = { createUser, getUser };
+        if (!id || !name) {
+            return res.status(400).json({ error: "Missing required fields: id, name" });
+        }
+
+        const params = {
+            TableName: TABLE_NAME,
+            Item: {
+                id,
+                name,
+                description: description || "", // Optional field
+            },
+        };
+
+        await dynamoDB.put(params).promise();
+        res.json({ message: "Item added successfully!" });
+    } catch (error) {
+        console.error("DynamoDB Put Error:", error);
+        res.status(500).json({ error: error.message });
+    }
+};

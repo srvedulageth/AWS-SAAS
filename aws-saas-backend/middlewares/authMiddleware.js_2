@@ -1,0 +1,57 @@
+const jwt = require("jsonwebtoken");
+const jwkToPem = require("jwk-to-pem");
+const axios = require("axios");
+
+const COGNITO_REGION = process.env.AWS_REGION;
+const COGNITO_USER_POOL_ID = process.env.COGNITO_USER_POOL_ID;
+const COGNITO_JWKS_URL = `https://cognito-idp.${COGNITO_REGION}.amazonaws.com/${COGNITO_USER_POOL_ID}/.well-known/jwks.json`;
+
+let cachedKeys;
+
+const getPublicKeys = async () => {
+    if (!cachedKeys) {
+        const { data } = await axios.get(COGNITO_JWKS_URL);
+        cachedKeys = data.keys.reduce((acc, key) => {
+            acc[key.kid] = jwkToPem(key);
+            return acc;
+        }, {});
+    }
+    return cachedKeys;
+};
+
+const authenticateUser = async (req, res, next) => {
+    try {
+        const token = req.headers.authorization?.split(" ")[1];
+        if (!token) return res.status(401).json({ message: "Unauthorized: No token provided" });
+
+        // Decode the JWT to get the 'kid' for key lookup
+        const decodedHeader = jwt.decode(token, { complete: true });
+        if (!decodedHeader || !decodedHeader.header.kid) {
+            return res.status(401).json({ message: "Unauthorized: Invalid token" });
+        }
+
+        const publicKeys = await getPublicKeys();
+        const pem = publicKeys[decodedHeader.header.kid];
+        if (!pem) return res.status(401).json({ message: "Unauthorized: Invalid token" });
+
+        // Verify the JWT using the public key and check the claims
+        jwt.verify(token, pem, { algorithms: ["RS256"] }, (err, decoded) => {
+            if (err) {
+                return res.status(401).json({ message: "Unauthorized: Token verification failed" });
+            }
+
+            // Add user details to the request object
+            req.user = decoded;
+            next();
+        });
+    } catch (error) {
+        console.error("Auth Middleware Error:", error);
+        res.status(500).json({ message: "Internal Server Error" });
+    }
+};
+
+module.exports = authenticateUser;
+//module.exports = (req, res, next) => {
+//    console.log("Skipping auth middleware for local testing");
+//    next();
+//};

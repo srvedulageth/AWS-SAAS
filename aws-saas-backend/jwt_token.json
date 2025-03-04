@@ -1,0 +1,15 @@
+{
+    "aud": "7d4pcs5p1fflvd90bbjbpb79t2",
+    "auth_time": 1740883146,
+    "cognito:username": "2939294e-d031-70e6-1f91-5e713257c57b",
+    "email": "srvedula70@gmail.com",
+    "email_verified": true,
+    "event_id": "1ddba1a6-f094-4992-8fb1-009b558593f1",
+    "exp": 1741027892,
+    "iat": 1741024292,
+    "iss": "https://cognito-idp.us-west-1.amazonaws.com/us-west-1_mJ0nwfHd2",
+    "jti": "a076001d-ea3b-483e-adf3-066ec9d82733",
+    "origin_jti": "2e6b397e-5642-486c-a5bb-ad74bf12e25b",
+    "sub": "2939294e-d031-70e6-1f91-5e713257c57b",
+    "token_use": "id"
+}
