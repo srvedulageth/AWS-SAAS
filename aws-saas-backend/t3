@@ -1,0 +1,8 @@
+# Get Signed Upload URL
+curl -X POST http://localhost:5000/api/s3/upload -H "Authorization: Bearer jwt_token_1.txt" -H "Content-Type: application/json" -d '{"fileName": "my_log"}'
+
+# List Files
+curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer jwt_token_1.txt"
+
+# Delete a File
+curl -X DELETE http://localhost:5000/api/s3/delete -H "Authorization: Bearer jwt_token_1.txt" -H "Content-Type: application/json" -d '{"fileName": "test.jpg"}'

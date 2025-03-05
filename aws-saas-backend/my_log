@@ -1,1072 +1,6 @@
-Server running on port 5000
-(node:115526) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-Server running on port 5000
-(node:115716) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-Skipping auth middleware for local testing
-DynamoDB Get Error: MissingRequiredParameter: Missing required key 'TableName' in params
-    at ParamValidator.fail (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:50:37)
-    at ParamValidator.validateStructure (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:62:14)
-    at ParamValidator.validateMember (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:89:21)
-    at ParamValidator.validate (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:34:10)
-    at Request.VALIDATE_PARAMETERS (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/event_listeners.js:166:42)
-    at Request.callListeners (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/sequential_executor.js:106:20)
-    at callNextListener (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/sequential_executor.js:96:12)
-    at /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/event_listeners.js:120:11
-    at finish (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/config.js:396:7)
-    at /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/config.js:438:9 {
-  code: 'MissingRequiredParameter',
-  time: 2025-03-02T23:26:48.650Z
-}
-Skipping auth middleware for local testing
-DynamoDB Put Error: MissingRequiredParameter: Missing required key 'TableName' in params
-    at ParamValidator.fail (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:50:37)
-    at ParamValidator.validateStructure (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:62:14)
-    at ParamValidator.validateMember (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:89:21)
-    at ParamValidator.validate (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/param_validator.js:34:10)
-    at Request.VALIDATE_PARAMETERS (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/event_listeners.js:166:42)
-    at Request.callListeners (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/sequential_executor.js:106:20)
-    at callNextListener (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/sequential_executor.js:96:12)
-    at /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/event_listeners.js:120:11
-    at finish (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/config.js:396:7)
-    at /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/config.js:414:9 {
-  code: 'MissingRequiredParameter',
-  time: 2025-03-02T23:27:14.180Z
-}
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
-DynamoDB Table Name: undefined
-Error: DYNAMODB_TABLE_NAME is not set in environment variables
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/services/dynamoDBService.js:11:11)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:101:39)
-    at require (node:internal/modules/helpers:136:16)
 DynamoDB Table Name: saas-table
 Server running on port 5000
-(node:116053) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-Skipping auth middleware for local testing
-DynamoDB Put Error: ValidationException: One or more parameter values were invalid: Type mismatch for key id expected: N actual: S
-    at Request.extractError (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/protocol/json.js:80:27)
-    at Request.callListeners (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/sequential_executor.js:106:20)
-    at Request.emit (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/sequential_executor.js:78:10)
-    at Request.emit (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/request.js:686:14)
-    at Request.transition (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/request.js:22:10)
-    at AcceptorStateMachine.runTo (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/state_machine.js:14:12)
-    at /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/state_machine.js:26:10
-    at Request.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/request.js:38:9)
-    at Request.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/request.js:688:12)
-    at Request.callListeners (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/node_modules/aws-sdk/lib/sequential_executor.js:116:18) {
-  code: 'ValidationException',
-  '[__type]': 'See error.__type for details.',
-  time: 2025-03-02T23:35:26.171Z,
-  requestId: 'AD3K2OQKEEHL651UI3JFH1MJ1RVV4KQNSO5AEMVJF66Q9ASUAAJG',
-  statusCode: 400,
-  retryable: false,
-  retryDelay: 36.115813953329976
-}
-Skipping auth middleware for local testing
-Skipping auth middleware for local testing
-Skipping auth middleware for local testing
-Skipping auth middleware for local testing
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'jwk-to-pem'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:2:18)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Error: Cannot find module 'axios'
-Require stack:
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js
-- /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Hook._require.Module.require (/home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js:3:15)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/middlewares/authMiddleware.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/routes.js',
-    '/home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend/index.js'
-  ]
-}
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:116834) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:119440) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:124643) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:124871) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-Skipping auth middleware for local testing
-Skipping auth middleware for local testing
-Skipping auth middleware for local testing
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:124976) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-Skipping auth middleware for local testing
-Skipping auth middleware for local testing
-Skipping auth middleware for local testing
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:127256) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:127383) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:127520) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
+(node:145027) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
  SDK releases are limited to address critical bug fixes and security issues only.
 
 Please migrate your code to use AWS SDK for JavaScript (v3).
@@ -1090,44 +24,13 @@ nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
 bQIDAQAB
 -----END PUBLIC KEY-----
 
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTEzMjg4OSwiaWF0IjoxNzQxMTI5Mjg5LCJqdGkiOiI3YjkwNWFhYS0zYzFiLTQ5NjQtYTEwYi0xYzI3MjQxOTA3MWMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.Hl5_HqxfYqHAUSLcHurS2rERy_SahRq0ClBelE78_qSCE1Gy0kly1gGSs5GisjsOWeyYahSQ2AIaMMZrVj8rIHE4IIgCHgNU5LKQbzE4gzjsLnwTKE4TeCwUw9BYmXMme_CwjccDPzlbiAMKvzFI3cIQU7rXZuM1nlD9_PLSBU8QQRWCSYfJic-NUXbe4ZGq1_yU20pMjo9D6WH7ru76JMtZ0QF2aotoSFDIG-StX01BZSln8DrBUtOEakt1qKaHZTSs8g9oBdrSOMxMT-yfPVNsCL0asnhFT-DLOAq9L512ox6jaqlwY6u7NAMkMetCpMzW-Qw-bwcocKfx-gAecg
+Request Params: { fileName: '1099-G-CA.pdf' }
+Raw URL: /api/s3/delete/1099-G-CA.pdf
+Received delete request for file: 1099-G-CA.pdf
 DynamoDB Table Name: saas-table
 Server running on port 5000
-(node:127581) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:127604) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
- SDK releases are limited to address critical bug fixes and security issues only.
-
-Please migrate your code to use AWS SDK for JavaScript (v3).
-For more information, check the blog post at https://a.co/cUPnyil
-(Use `node --trace-warnings ...` to show where the warning was created)
-Key {
-  alg: 'RS256',
-  e: 'AQAB',
-  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
-  kty: 'RSA',
-  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
-  use: 'sig'
-}
-Key -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
-kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
-bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
-EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
-Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
-nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
-bQIDAQAB
------END PUBLIC KEY-----
-
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAyNzg5MiwiaWF0IjoxNzQxMDI0MjkyLCJqdGkiOiJhMDc2MDAxZC1lYTNiLTQ4M2UtYWRmMy0wNjZlYzlkODI3MzMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.yAKEZvHM6MCoTN3ckQh0rMZ8A7u00C2RF-IA7XooBinY7tKLqOUzJYMpmplMyVx2bL3CRw2jBOAbw66mH5O82ur_d2ub8oB4MLkcFbniksYSe_-2i7BiAyGs222OASwXsAmzTyeFol-TYMLw1joZvaeeKUisUFSQW06aN0jBEdHYiKMNra7rtewXxpIHzYPzSxsLElJk1jkXTTIbGm_hzkg05KxcAzw3QOFVFAn8hhSmN1OejV4uqIjzHn4pyVyVfx-LzBMTQ5pvirPg5kIHU1jCx4n29eayBuvRixxO14BQ27SGC6RBq-4Pi3hlxDohiHj5tv4umZg0yMdz6K56hQ
-DynamoDB Table Name: saas-table
-Server running on port 5000
-(node:127705) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
+(node:145075) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
  SDK releases are limited to address critical bug fixes and security issues only.
 
 Please migrate your code to use AWS SDK for JavaScript (v3).
@@ -1151,7 +54,7 @@ nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
 bQIDAQAB
 -----END PUBLIC KEY-----
 
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAzNDcyNSwiaWF0IjoxNzQxMDMxMTI1LCJqdGkiOiI1MDljMjNkYS1lYTJjLTQ5ZjMtYTU2MC1kYjU1NDc2M2JmNTYiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.oQFmR8H-tGm1GEuQwYZP8jauXA0UfdYHqqAKXUkcLkHOtEsoh9dyGJLbtK_AURmClCvuC3RZYh3OZg0Gq2GNuRYUVeOgckeo8UjuYXT1j4KHYaSmn0z0loDzDiknPHJoCjdNgGN7cu2-pgqKj68D_lF4rQEvluNn0z4hg7-ZsFs8_DFcd3Uf7ToK-E7b0AlwRRi6NbBMy8hNlWrc1zF4VNkAF_cvU-OkzuU-PdZeqSYNRWDgHz7rflCEA0G91JwWTy831MJO9pVVeo5EiNj3wVda-G1e5N-q_1qzoUBiX7s--cgomb-rwQDSYk6XuqQ0dmMrcYbKDVZAQj9Hc7MfXg
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTEzMjg4OSwiaWF0IjoxNzQxMTI5Mjg5LCJqdGkiOiI3YjkwNWFhYS0zYzFiLTQ5NjQtYTEwYi0xYzI3MjQxOTA3MWMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.Hl5_HqxfYqHAUSLcHurS2rERy_SahRq0ClBelE78_qSCE1Gy0kly1gGSs5GisjsOWeyYahSQ2AIaMMZrVj8rIHE4IIgCHgNU5LKQbzE4gzjsLnwTKE4TeCwUw9BYmXMme_CwjccDPzlbiAMKvzFI3cIQU7rXZuM1nlD9_PLSBU8QQRWCSYfJic-NUXbe4ZGq1_yU20pMjo9D6WH7ru76JMtZ0QF2aotoSFDIG-StX01BZSln8DrBUtOEakt1qKaHZTSs8g9oBdrSOMxMT-yfPVNsCL0asnhFT-DLOAq9L512ox6jaqlwY6u7NAMkMetCpMzW-Qw-bwcocKfx-gAecg
 Key {
   alg: 'RS256',
   e: 'AQAB',
@@ -1170,7 +73,7 @@ nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
 bQIDAQAB
 -----END PUBLIC KEY-----
 
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAzNDcyNSwiaWF0IjoxNzQxMDMxMTI1LCJqdGkiOiI1MDljMjNkYS1lYTJjLTQ5ZjMtYTU2MC1kYjU1NDc2M2JmNTYiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.oQFmR8H-tGm1GEuQwYZP8jauXA0UfdYHqqAKXUkcLkHOtEsoh9dyGJLbtK_AURmClCvuC3RZYh3OZg0Gq2GNuRYUVeOgckeo8UjuYXT1j4KHYaSmn0z0loDzDiknPHJoCjdNgGN7cu2-pgqKj68D_lF4rQEvluNn0z4hg7-ZsFs8_DFcd3Uf7ToK-E7b0AlwRRi6NbBMy8hNlWrc1zF4VNkAF_cvU-OkzuU-PdZeqSYNRWDgHz7rflCEA0G91JwWTy831MJO9pVVeo5EiNj3wVda-G1e5N-q_1qzoUBiX7s--cgomb-rwQDSYk6XuqQ0dmMrcYbKDVZAQj9Hc7MfXg
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTEzMjg4OSwiaWF0IjoxNzQxMTI5Mjg5LCJqdGkiOiI3YjkwNWFhYS0zYzFiLTQ5NjQtYTEwYi0xYzI3MjQxOTA3MWMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.Hl5_HqxfYqHAUSLcHurS2rERy_SahRq0ClBelE78_qSCE1Gy0kly1gGSs5GisjsOWeyYahSQ2AIaMMZrVj8rIHE4IIgCHgNU5LKQbzE4gzjsLnwTKE4TeCwUw9BYmXMme_CwjccDPzlbiAMKvzFI3cIQU7rXZuM1nlD9_PLSBU8QQRWCSYfJic-NUXbe4ZGq1_yU20pMjo9D6WH7ru76JMtZ0QF2aotoSFDIG-StX01BZSln8DrBUtOEakt1qKaHZTSs8g9oBdrSOMxMT-yfPVNsCL0asnhFT-DLOAq9L512ox6jaqlwY6u7NAMkMetCpMzW-Qw-bwcocKfx-gAecg
 Key {
   alg: 'RS256',
   e: 'AQAB',
@@ -1189,29 +92,13 @@ nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
 bQIDAQAB
 -----END PUBLIC KEY-----
 
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAzNDcyNSwiaWF0IjoxNzQxMDMxMTI1LCJqdGkiOiI1MDljMjNkYS1lYTJjLTQ5ZjMtYTU2MC1kYjU1NDc2M2JmNTYiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.oQFmR8H-tGm1GEuQwYZP8jauXA0UfdYHqqAKXUkcLkHOtEsoh9dyGJLbtK_AURmClCvuC3RZYh3OZg0Gq2GNuRYUVeOgckeo8UjuYXT1j4KHYaSmn0z0loDzDiknPHJoCjdNgGN7cu2-pgqKj68D_lF4rQEvluNn0z4hg7-ZsFs8_DFcd3Uf7ToK-E7b0AlwRRi6NbBMy8hNlWrc1zF4VNkAF_cvU-OkzuU-PdZeqSYNRWDgHz7rflCEA0G91JwWTy831MJO9pVVeo5EiNj3wVda-G1e5N-q_1qzoUBiX7s--cgomb-rwQDSYk6XuqQ0dmMrcYbKDVZAQj9Hc7MfXg
-Key {
-  alg: 'RS256',
-  e: 'AQAB',
-  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
-  kty: 'RSA',
-  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
-  use: 'sig'
-}
-Key -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
-kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
-bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
-EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
-Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
-nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
-bQIDAQAB
------END PUBLIC KEY-----
-
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAzNDcyNSwiaWF0IjoxNzQxMDMxMTI1LCJqdGkiOiI1MDljMjNkYS1lYTJjLTQ5ZjMtYTU2MC1kYjU1NDc2M2JmNTYiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.oQFmR8H-tGm1GEuQwYZP8jauXA0UfdYHqqAKXUkcLkHOtEsoh9dyGJLbtK_AURmClCvuC3RZYh3OZg0Gq2GNuRYUVeOgckeo8UjuYXT1j4KHYaSmn0z0loDzDiknPHJoCjdNgGN7cu2-pgqKj68D_lF4rQEvluNn0z4hg7-ZsFs8_DFcd3Uf7ToK-E7b0AlwRRi6NbBMy8hNlWrc1zF4VNkAF_cvU-OkzuU-PdZeqSYNRWDgHz7rflCEA0G91JwWTy831MJO9pVVeo5EiNj3wVda-G1e5N-q_1qzoUBiX7s--cgomb-rwQDSYk6XuqQ0dmMrcYbKDVZAQj9Hc7MfXg
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTEzMjg4OSwiaWF0IjoxNzQxMTI5Mjg5LCJqdGkiOiI3YjkwNWFhYS0zYzFiLTQ5NjQtYTEwYi0xYzI3MjQxOTA3MWMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.Hl5_HqxfYqHAUSLcHurS2rERy_SahRq0ClBelE78_qSCE1Gy0kly1gGSs5GisjsOWeyYahSQ2AIaMMZrVj8rIHE4IIgCHgNU5LKQbzE4gzjsLnwTKE4TeCwUw9BYmXMme_CwjccDPzlbiAMKvzFI3cIQU7rXZuM1nlD9_PLSBU8QQRWCSYfJic-NUXbe4ZGq1_yU20pMjo9D6WH7ru76JMtZ0QF2aotoSFDIG-StX01BZSln8DrBUtOEakt1qKaHZTSs8g9oBdrSOMxMT-yfPVNsCL0asnhFT-DLOAq9L512ox6jaqlwY6u7NAMkMetCpMzW-Qw-bwcocKfx-gAecg
+Request Params: { fileName: '1099-G-CA.pdf' }
+Raw URL: /api/s3/delete/1099-G-CA.pdf
+Received delete request for file: 1099-G-CA.pdf
 DynamoDB Table Name: saas-table
 Server running on port 5000
-(node:129420) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
+(node:145126) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
  SDK releases are limited to address critical bug fixes and security issues only.
 
 Please migrate your code to use AWS SDK for JavaScript (v3).
@@ -1235,105 +122,14 @@ nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
 bQIDAQAB
 -----END PUBLIC KEY-----
 
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAzNDcyNSwiaWF0IjoxNzQxMDMxMTI1LCJqdGkiOiI1MDljMjNkYS1lYTJjLTQ5ZjMtYTU2MC1kYjU1NDc2M2JmNTYiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.oQFmR8H-tGm1GEuQwYZP8jauXA0UfdYHqqAKXUkcLkHOtEsoh9dyGJLbtK_AURmClCvuC3RZYh3OZg0Gq2GNuRYUVeOgckeo8UjuYXT1j4KHYaSmn0z0loDzDiknPHJoCjdNgGN7cu2-pgqKj68D_lF4rQEvluNn0z4hg7-ZsFs8_DFcd3Uf7ToK-E7b0AlwRRi6NbBMy8hNlWrc1zF4VNkAF_cvU-OkzuU-PdZeqSYNRWDgHz7rflCEA0G91JwWTy831MJO9pVVeo5EiNj3wVda-G1e5N-q_1qzoUBiX7s--cgomb-rwQDSYk6XuqQ0dmMrcYbKDVZAQj9Hc7MfXg
-Key {
-  alg: 'RS256',
-  e: 'AQAB',
-  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
-  kty: 'RSA',
-  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
-  use: 'sig'
-}
-Key -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
-kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
-bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
-EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
-Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
-nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
-bQIDAQAB
------END PUBLIC KEY-----
-
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAzNDcyNSwiaWF0IjoxNzQxMDMxMTI1LCJqdGkiOiI1MDljMjNkYS1lYTJjLTQ5ZjMtYTU2MC1kYjU1NDc2M2JmNTYiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.oQFmR8H-tGm1GEuQwYZP8jauXA0UfdYHqqAKXUkcLkHOtEsoh9dyGJLbtK_AURmClCvuC3RZYh3OZg0Gq2GNuRYUVeOgckeo8UjuYXT1j4KHYaSmn0z0loDzDiknPHJoCjdNgGN7cu2-pgqKj68D_lF4rQEvluNn0z4hg7-ZsFs8_DFcd3Uf7ToK-E7b0AlwRRi6NbBMy8hNlWrc1zF4VNkAF_cvU-OkzuU-PdZeqSYNRWDgHz7rflCEA0G91JwWTy831MJO9pVVeo5EiNj3wVda-G1e5N-q_1qzoUBiX7s--cgomb-rwQDSYk6XuqQ0dmMrcYbKDVZAQj9Hc7MfXg
-Key {
-  alg: 'RS256',
-  e: 'AQAB',
-  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
-  kty: 'RSA',
-  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
-  use: 'sig'
-}
-Key -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
-kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
-bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
-EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
-Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
-nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
-bQIDAQAB
------END PUBLIC KEY-----
-
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTA0NzIxNywiaWF0IjoxNzQxMDQzNjE3LCJqdGkiOiI1MGNkYzY2ZS04YzE4LTQzODgtYTgyZi1jMzU2MjUxMTRkZTMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.KDHsLRpqwgWRDPZRiIgfoMp7QKl_LaoPFSLxN1Ib3f9yCuj80eJ_mEPokClb9IrGQ-ko_V3sfrtxVD9AkiKaLkS6x8E0GYejj96tn6TNs2hg8KeoMgiXJJfshDogWW2MAGV7E8rVuvXEZtxFA-Oqc5NHfQ3pmmPFvtCKHh6eoynWJaYlqWlx9IghncOUSGfmE2M2fD5uqS9Mp8VDFlY82Dw8cZqzZzL6pJwCk4WBuugc7DwHlmfUrPi0CfujWnEef9QjVSKfHVQDDzrp7VPISZUBnTq2gBvnTrCYG_V0tpAhJxx-nNltpo9G5mu75seoWSnK1quN73VfO6rCQVQYTg
-Key {
-  alg: 'RS256',
-  e: 'AQAB',
-  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
-  kty: 'RSA',
-  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
-  use: 'sig'
-}
-Key -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
-kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
-bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
-EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
-Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
-nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
-bQIDAQAB
------END PUBLIC KEY-----
-
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTA0NzIxNywiaWF0IjoxNzQxMDQzNjE3LCJqdGkiOiI1MGNkYzY2ZS04YzE4LTQzODgtYTgyZi1jMzU2MjUxMTRkZTMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.KDHsLRpqwgWRDPZRiIgfoMp7QKl_LaoPFSLxN1Ib3f9yCuj80eJ_mEPokClb9IrGQ-ko_V3sfrtxVD9AkiKaLkS6x8E0GYejj96tn6TNs2hg8KeoMgiXJJfshDogWW2MAGV7E8rVuvXEZtxFA-Oqc5NHfQ3pmmPFvtCKHh6eoynWJaYlqWlx9IghncOUSGfmE2M2fD5uqS9Mp8VDFlY82Dw8cZqzZzL6pJwCk4WBuugc7DwHlmfUrPi0CfujWnEef9QjVSKfHVQDDzrp7VPISZUBnTq2gBvnTrCYG_V0tpAhJxx-nNltpo9G5mu75seoWSnK1quN73VfO6rCQVQYTg
-Key {
-  alg: 'RS256',
-  e: 'AQAB',
-  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
-  kty: 'RSA',
-  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
-  use: 'sig'
-}
-Key -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
-kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
-bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
-EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
-Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
-nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
-bQIDAQAB
------END PUBLIC KEY-----
-
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTA0NzIxNywiaWF0IjoxNzQxMDQzNjE3LCJqdGkiOiI1MGNkYzY2ZS04YzE4LTQzODgtYTgyZi1jMzU2MjUxMTRkZTMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.KDHsLRpqwgWRDPZRiIgfoMp7QKl_LaoPFSLxN1Ib3f9yCuj80eJ_mEPokClb9IrGQ-ko_V3sfrtxVD9AkiKaLkS6x8E0GYejj96tn6TNs2hg8KeoMgiXJJfshDogWW2MAGV7E8rVuvXEZtxFA-Oqc5NHfQ3pmmPFvtCKHh6eoynWJaYlqWlx9IghncOUSGfmE2M2fD5uqS9Mp8VDFlY82Dw8cZqzZzL6pJwCk4WBuugc7DwHlmfUrPi0CfujWnEef9QjVSKfHVQDDzrp7VPISZUBnTq2gBvnTrCYG_V0tpAhJxx-nNltpo9G5mu75seoWSnK1quN73VfO6rCQVQYTg
-Key {
-  alg: 'RS256',
-  e: 'AQAB',
-  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
-  kty: 'RSA',
-  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
-  use: 'sig'
-}
-Key -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
-kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
-bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
-EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
-Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
-nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
-bQIDAQAB
------END PUBLIC KEY-----
-
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTA0NzIxNywiaWF0IjoxNzQxMDQzNjE3LCJqdGkiOiI1MGNkYzY2ZS04YzE4LTQzODgtYTgyZi1jMzU2MjUxMTRkZTMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.KDHsLRpqwgWRDPZRiIgfoMp7QKl_LaoPFSLxN1Ib3f9yCuj80eJ_mEPokClb9IrGQ-ko_V3sfrtxVD9AkiKaLkS6x8E0GYejj96tn6TNs2hg8KeoMgiXJJfshDogWW2MAGV7E8rVuvXEZtxFA-Oqc5NHfQ3pmmPFvtCKHh6eoynWJaYlqWlx9IghncOUSGfmE2M2fD5uqS9Mp8VDFlY82Dw8cZqzZzL6pJwCk4WBuugc7DwHlmfUrPi0CfujWnEef9QjVSKfHVQDDzrp7VPISZUBnTq2gBvnTrCYG_V0tpAhJxx-nNltpo9G5mu75seoWSnK1quN73VfO6rCQVQYTg
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTEzMjg4OSwiaWF0IjoxNzQxMTI5Mjg5LCJqdGkiOiI3YjkwNWFhYS0zYzFiLTQ5NjQtYTEwYi0xYzI3MjQxOTA3MWMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.Hl5_HqxfYqHAUSLcHurS2rERy_SahRq0ClBelE78_qSCE1Gy0kly1gGSs5GisjsOWeyYahSQ2AIaMMZrVj8rIHE4IIgCHgNU5LKQbzE4gzjsLnwTKE4TeCwUw9BYmXMme_CwjccDPzlbiAMKvzFI3cIQU7rXZuM1nlD9_PLSBU8QQRWCSYfJic-NUXbe4ZGq1_yU20pMjo9D6WH7ru76JMtZ0QF2aotoSFDIG-StX01BZSln8DrBUtOEakt1qKaHZTSs8g9oBdrSOMxMT-yfPVNsCL0asnhFT-DLOAq9L512ox6jaqlwY6u7NAMkMetCpMzW-Qw-bwcocKfx-gAecg
+Request Params: { fileName: '1099-G-CA.pdf' }
+Raw URL: /api/s3/delete/1099-G-CA.pdf
+Received delete request for file: 1099-G-CA.pdf
+Received delete request for file 2: undefined
 DynamoDB Table Name: saas-table
 Server running on port 5000
-(node:134499) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
+(node:145175) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
  SDK releases are limited to address critical bug fixes and security issues only.
 
 Please migrate your code to use AWS SDK for JavaScript (v3).
@@ -1357,7 +153,13 @@ nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
 bQIDAQAB
 -----END PUBLIC KEY-----
 
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTA0NzIxNywiaWF0IjoxNzQxMDQzNjE3LCJqdGkiOiI1MGNkYzY2ZS04YzE4LTQzODgtYTgyZi1jMzU2MjUxMTRkZTMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.KDHsLRpqwgWRDPZRiIgfoMp7QKl_LaoPFSLxN1Ib3f9yCuj80eJ_mEPokClb9IrGQ-ko_V3sfrtxVD9AkiKaLkS6x8E0GYejj96tn6TNs2hg8KeoMgiXJJfshDogWW2MAGV7E8rVuvXEZtxFA-Oqc5NHfQ3pmmPFvtCKHh6eoynWJaYlqWlx9IghncOUSGfmE2M2fD5uqS9Mp8VDFlY82Dw8cZqzZzL6pJwCk4WBuugc7DwHlmfUrPi0CfujWnEef9QjVSKfHVQDDzrp7VPISZUBnTq2gBvnTrCYG_V0tpAhJxx-nNltpo9G5mu75seoWSnK1quN73VfO6rCQVQYTg
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTEzMjg4OSwiaWF0IjoxNzQxMTI5Mjg5LCJqdGkiOiI3YjkwNWFhYS0zYzFiLTQ5NjQtYTEwYi0xYzI3MjQxOTA3MWMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.Hl5_HqxfYqHAUSLcHurS2rERy_SahRq0ClBelE78_qSCE1Gy0kly1gGSs5GisjsOWeyYahSQ2AIaMMZrVj8rIHE4IIgCHgNU5LKQbzE4gzjsLnwTKE4TeCwUw9BYmXMme_CwjccDPzlbiAMKvzFI3cIQU7rXZuM1nlD9_PLSBU8QQRWCSYfJic-NUXbe4ZGq1_yU20pMjo9D6WH7ru76JMtZ0QF2aotoSFDIG-StX01BZSln8DrBUtOEakt1qKaHZTSs8g9oBdrSOMxMT-yfPVNsCL0asnhFT-DLOAq9L512ox6jaqlwY6u7NAMkMetCpMzW-Qw-bwcocKfx-gAecg
+Request Params: { fileName: '1099-G-CA.pdf' }
+Raw URL: /api/s3/delete/1099-G-CA.pdf
+Received delete request for file: 1099-G-CA.pdf
+Received delete request for file 2: 1099-G-CA.pdf
+Attempting to delete file with params: { Bucket: 'my-saas-app-bucket', Key: '1099-G-CA.pdf' }
+file deleted 1099-G-CA.pdf
 Key {
   alg: 'RS256',
   e: 'AQAB',
@@ -1376,4 +178,89 @@ nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
 bQIDAQAB
 -----END PUBLIC KEY-----
 
-Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTExMDMxMSwiaWF0IjoxNzQxMTA2NzExLCJqdGkiOiI2ODE0MWFlOC1kNzVkLTQ4N2MtODYyYy1jNzcwNzViNTgxOTkiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.Xu6uETFHZTbHzUn1NsUdq8Phb9A1qSoetBENi9Fx263se75kWcptrN1hETVLKGBDuMk3gKRmDY4wMIFgpekHXD4i0IAsPsL92z_YJtgsqX4exxft0M68oDkZVLAANoRn_sN5C0VGhrU3py07RPfIjIOhuZSJeHjCnnHOgIO_SmpDPcTFpHQ_u7Bupi1O9YLlPdw5RBNRxLM7E7_yJlHYqYvFP68jBSvpqBIiIP173S9oAnQdmiAYmLzJ8X0RNSs4lXZPQZAFHV0nPgt75mQIjdiu9jEI8M5-BooUzNRXqul11kmNA6FoIk6wS32fr6uo1k2tl3IxgIl2UGMYjb7dOw
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTE5NjU5OCwiaWF0IjoxNzQxMTkyOTk4LCJqdGkiOiI3MjBmZGZjYy00ZTViLTQyNjktYmQxYS03YWE3NGE1NmZmMDciLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.AclRcWKP6db_BHeB0LZ2uoYX0Xx6ORWTy2EyDI9nzKFnkrM8RA6LFRBH0LE3tYWEGZWg5LAmaA0_RP-yuf18g6ti_ksrIlPqxdDMyRCfmCAZ7OfZAylCVTF4vALwUduZCedkCN5F1Qx8nWwOyi0W7Xq8Dm5cxpRSHlDDW5D5tyPizAtEzZnaHvV0yPE0dJTXP2nBzf9nr__n4ruLhadHZkaeAyfKitKIiU2TNagJChBuO8ywYeS0r_2rGlHIsmUQ7l4hL6jdn2DqXYY8HUz_EJQwEvNG1GWQUpQw5DF3ZCPa5S1BLK3rJ4IlGVe2a5Ng-K18ueLffRBX-oVWSaqptA
+Key {
+  alg: 'RS256',
+  e: 'AQAB',
+  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
+  kty: 'RSA',
+  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
+  use: 'sig'
+}
+Key -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
+kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
+bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
+EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
+Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
+nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
+bQIDAQAB
+-----END PUBLIC KEY-----
+
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTE5NjU5OCwiaWF0IjoxNzQxMTkyOTk4LCJqdGkiOiI3MjBmZGZjYy00ZTViLTQyNjktYmQxYS03YWE3NGE1NmZmMDciLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.AclRcWKP6db_BHeB0LZ2uoYX0Xx6ORWTy2EyDI9nzKFnkrM8RA6LFRBH0LE3tYWEGZWg5LAmaA0_RP-yuf18g6ti_ksrIlPqxdDMyRCfmCAZ7OfZAylCVTF4vALwUduZCedkCN5F1Qx8nWwOyi0W7Xq8Dm5cxpRSHlDDW5D5tyPizAtEzZnaHvV0yPE0dJTXP2nBzf9nr__n4ruLhadHZkaeAyfKitKIiU2TNagJChBuO8ywYeS0r_2rGlHIsmUQ7l4hL6jdn2DqXYY8HUz_EJQwEvNG1GWQUpQw5DF3ZCPa5S1BLK3rJ4IlGVe2a5Ng-K18ueLffRBX-oVWSaqptA
+Key {
+  alg: 'RS256',
+  e: 'AQAB',
+  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
+  kty: 'RSA',
+  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
+  use: 'sig'
+}
+Key -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
+kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
+bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
+EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
+Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
+nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
+bQIDAQAB
+-----END PUBLIC KEY-----
+
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTE5NjU5OCwiaWF0IjoxNzQxMTkyOTk4LCJqdGkiOiI3MjBmZGZjYy00ZTViLTQyNjktYmQxYS03YWE3NGE1NmZmMDciLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.AclRcWKP6db_BHeB0LZ2uoYX0Xx6ORWTy2EyDI9nzKFnkrM8RA6LFRBH0LE3tYWEGZWg5LAmaA0_RP-yuf18g6ti_ksrIlPqxdDMyRCfmCAZ7OfZAylCVTF4vALwUduZCedkCN5F1Qx8nWwOyi0W7Xq8Dm5cxpRSHlDDW5D5tyPizAtEzZnaHvV0yPE0dJTXP2nBzf9nr__n4ruLhadHZkaeAyfKitKIiU2TNagJChBuO8ywYeS0r_2rGlHIsmUQ7l4hL6jdn2DqXYY8HUz_EJQwEvNG1GWQUpQw5DF3ZCPa5S1BLK3rJ4IlGVe2a5Ng-K18ueLffRBX-oVWSaqptA
+Request Params: { fileName: 'uploads/1740884612354-img_1.jpeg' }
+Raw URL: /api/s3/delete/uploads%2F1740884612354-img_1.jpeg
+Received delete request for file: uploads/1740884612354-img_1.jpeg
+Received delete request for file 2: uploads/1740884612354-img_1.jpeg
+Attempting to delete file with params: {
+  Bucket: 'my-saas-app-bucket',
+  Key: 'uploads/1740884612354-img_1.jpeg'
+}
+file deleted uploads/1740884612354-img_1.jpeg
+Key {
+  alg: 'RS256',
+  e: 'AQAB',
+  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
+  kty: 'RSA',
+  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
+  use: 'sig'
+}
+Key -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
+kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
+bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
+EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
+Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
+nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
+bQIDAQAB
+-----END PUBLIC KEY-----
+
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTE5NjU5OCwiaWF0IjoxNzQxMTkyOTk4LCJqdGkiOiI3MjBmZGZjYy00ZTViLTQyNjktYmQxYS03YWE3NGE1NmZmMDciLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.AclRcWKP6db_BHeB0LZ2uoYX0Xx6ORWTy2EyDI9nzKFnkrM8RA6LFRBH0LE3tYWEGZWg5LAmaA0_RP-yuf18g6ti_ksrIlPqxdDMyRCfmCAZ7OfZAylCVTF4vALwUduZCedkCN5F1Qx8nWwOyi0W7Xq8Dm5cxpRSHlDDW5D5tyPizAtEzZnaHvV0yPE0dJTXP2nBzf9nr__n4ruLhadHZkaeAyfKitKIiU2TNagJChBuO8ywYeS0r_2rGlHIsmUQ7l4hL6jdn2DqXYY8HUz_EJQwEvNG1GWQUpQw5DF3ZCPa5S1BLK3rJ4IlGVe2a5Ng-K18ueLffRBX-oVWSaqptA
+Key {
+  alg: 'RS256',
+  e: 'AQAB',
+  kid: 'eEAnmXKdbqYl1THylBQQmUtKHHE2PIPR+1ZubPXQnwg=',
+  kty: 'RSA',
+  n: 'yLArRT2shfXGMdM49XcXkLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG_MApnNos1H5i5obupppZTdKKEnPUSUVch7F4vF_rfFGlTa_yifNmvg7MApydnhWKjG_uK462veNHQ8EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZaLtq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF_xd-JKdZqVpPhonCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ_hzLYXlOeMu1SoJ6C26TyEbQ',
+  use: 'sig'
+}
+Key -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLArRT2shfXGMdM49XcX
+kLLomIMniXaUngiyaHub7krWiK7rm9rMQwsjCmanoLCOdALqUG/MApnNos1H5i5o
+bupppZTdKKEnPUSUVch7F4vF/rfFGlTa/yifNmvg7MApydnhWKjG/uK462veNHQ8
+EZprqO9La8rL5F5BT3Fdr3jGwQxh0uMt6HjbO7mr7RLnzulphbZj8V0NJ2RZlJZa
+Ltq1SJY8qFCEJffPLm1DdmpV8RNuHIqQE75JxWpPSfI4s8TZVF/xd+JKdZqVpPho
+nCi6jK2jQCqNanO2KhGUwsfM3NtPcyf3Jj4Szm76oJ/hzLYXlOeMu1SoJ6C26TyE
+bQIDAQAB
+-----END PUBLIC KEY-----
+
+Token:  eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTE5NjU5OCwiaWF0IjoxNzQxMTkyOTk4LCJqdGkiOiI3MjBmZGZjYy00ZTViLTQyNjktYmQxYS03YWE3NGE1NmZmMDciLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.AclRcWKP6db_BHeB0LZ2uoYX0Xx6ORWTy2EyDI9nzKFnkrM8RA6LFRBH0LE3tYWEGZWg5LAmaA0_RP-yuf18g6ti_ksrIlPqxdDMyRCfmCAZ7OfZAylCVTF4vALwUduZCedkCN5F1Qx8nWwOyi0W7Xq8Dm5cxpRSHlDDW5D5tyPizAtEzZnaHvV0yPE0dJTXP2nBzf9nr__n4ruLhadHZkaeAyfKitKIiU2TNagJChBuO8ywYeS0r_2rGlHIsmUQ7l4hL6jdn2DqXYY8HUz_EJQwEvNG1GWQUpQw5DF3ZCPa5S1BLK3rJ4IlGVe2a5Ng-K18ueLffRBX-oVWSaqptA

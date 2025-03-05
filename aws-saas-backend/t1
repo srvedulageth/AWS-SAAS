@@ -1,1000 +1,1000 @@
- 1006  \rm -rf node_modules
- 1007  npm install
- 1008  pwd
- 1009  clear
- 1010  npm run dev -- --host
- 1011  pwd
- 1012  npm run dev -- --host
- 1013  clear
- 1014  npm run dev -- --host
- 1015  clear
- 1016  pwd
- 1017  df -k .
- 1018  pwd
- 1019  cd AWS-SAAS/
- 1020  ls
- 1021  cd aws-saas-frontend
- 1022  ls -al
- 1023  cd src/
- 1024  ls -al
- 1025  vi aws-config.js
- 1026  cd components/
- 1027  ls -al
- 1028  vi FileUpload.jsx 
- 1029  cd ../pages/
- 1030  vi Register.jsx 
- 1031  clear
- 1032  pwd
- 1033  cd ../..
- 1034  cp package.json package.json_1
- 1035  vi package.json_1 
- 1036  pwd
- 1037  cd src/
- 1038  ls
- 1039  vi aws-config.js
- 1040  pwd
- 1041  cd pages/
- 1042  ls -al
- 1043  cd ..
- 1044  amplify
- 1045  cd pages/
- 1046  vi Register.jsx 
- 1047  cd ..
- 1048  ls
- 1049  cd node_modules/.vite/deps/
- 1050  ls
- 1051  grep "Auth UserPool not configured" *
- 1052  cd AWS-SAAS/aws-saas-frontend/node_modules/.vite/deps/
- 1053  ls -al
- 1054  vi aws-amplify_auth.js
- 1055  vi aws-amplify_storage.js
- 1056  vi aws-amplify.js
- 1057  vi chunk-*.js
- 1058  vi chunk-WCYKXIG5.js
- 1059  vi *.js
- 1060  pwd
- 1061  cd ../../../
- 1062  cd ../aws-saas-backend/
- 1063  ls -al
- 1064  cd services/
- 1065  ls -al
- 1066  cd ..
- 1067  cd middlewares/
- 1068  ls
- 1069  vi authMiddleware.js 
- 1070  cd ..
- 1071  vi .env 
- 1072  ls -al
- 1073  cd services/
- 1074  ls
- 1075  grep COGNITO *
- 1076  vi ../.env 
- 1077  grep COGNITO_USER_POOL_ID *
- 1078  cd ..
- 1079  grep COGNITO_USER_POOL_ID * -r
+ 1010  cd ../
+ 1011  mv aws-saas-frontend/.gitignore .
+ 1012  vi .gitignore 
+ 1013  git status
+ 1014  ls -al
+ 1015  cd ..
+ 1016  git init
+ 1017  cd -
+ 1018  git init
+ 1019  ls -al
+ 1020  git status
+ 1021  git commit -m "first commit"
+ 1022  git add *
+ 1023  git status
+ 1024  vi .gitignore 
+ 1025  git status
+ 1026  git commit -m "first commit"
+ 1027  git status
+ 1028  pwd
+ 1029  ls -al
+ 1030  \rm -rf .git
+ 1031  git status
+ 1032  ls -al
+ 1033  ls -al aws-saas-frontend
+ 1034  vi .gitignore 
+ 1035  git clone https://github.com/srvedulageth/AWS-SAAS.git
+ 1036  git status
+ 1037  git add *
+ 1038  ls -al
+ 1039  cd AWS-SAAS/
+ 1040  ls
+ 1041  ls -al
+ 1042  mv ../.gitignore .
+ 1043  mv ../aws-saas-* .
+ 1044  ls -al
+ 1045  cd ..
+ 1046  ls -al
+ 1047  cd AWS-SAAS/
+ 1048  ls -al
+ 1049  git add *
+ 1050  git status
+ 1051  git commit -m "first commit"
+ 1052  git status
+ 1053  git push
+ 1054  clear
+ 1055  ls -al
+ 1056  cd aws-saas-backend/
+ 1057  ps -aef | grep pm2
+ 1058  kill -9 1690
+ 1059  ps -aef | grep pm2
+ 1060  clear
+ 1061  ps -aef | grep pm2
+ 1062  ls -al
+ 1063  \rm -rf node_modules/
+ 1064  \rm -rf package-lock.json 
+ 1065  npm install
+ 1066  ls
+ 1067  history | grep pm2
+ 1068  vi index.js 
+ 1069  pm2 start index.js 
+ 1070  grep assertTokenProviderConfig *
+ 1071  clear
+ 1072  history
+ 1073  which pm2
+ 1074  which npm
+ 1075  sudo npm install -g
+ 1076  ls -al
+ 1077  cd ../../..
+ 1078  ls -al
+ 1079  cd apps
  1080  ls -al
- 1081  vi index.js 
- 1082  cd AWS-SAAS/aws-saas-frontend
- 1083  clear
- 1084  npm run dev -- --host
- 1085  cd AWS-SAAS/aws-saas-frontend
- 1086  ls -al
- 1087  \rm -rf node_modules package-lock.json 
- 1088  npm install
- 1089  pwd
- 1090  cd node_modules/.vite/deps/
+ 1081  cd Full-Stack_Site_with_React/
+ 1082  ls -al
+ 1083  cd back-end/
+ 1084  ls -al
+ 1085  vi t1
+ 1086  cd ../../
+ 1087  cd ../
+ 1088  cd AWS-SAAS/
+ 1089  ls
+ 1090  cd AWS-SAAS/
  1091  ls -al
- 1092  vi chunk-*.js
- 1093  ls
- 1094  cd ../..
- 1095  ls
- 1096  cd ..
- 1097  cd src/
- 1098  vi aws-config.js
- 1099  clear
- 1100  cd components/
- 1101  cd ../pages/
- 1102  vi Register.jsx 
- 1103  cd ../../node_modules/.vite/deps/
- 1104  ls -al
- 1105  vi chunk-*.js
- 1106  vi aws-amplify*.js
- 1107  vi chunk-*.js
- 1108  vi aws-amplify*.js
- 1109  vi aws-amplify_auth.js
- 1110  cd ..
- 1111  cd
- 1112  cd AWS-SAAS/aws-saas-frontend
- 1113  ls -al
- 1114  vi vite.config.js 
- 1115  cd src/
- 1116  vi aws-config.js
- 1117  cd AWS-SAAS/aws-saas-frontend/
- 1118  npm run dev -- --host
- 1119  \rm -rf node_modules package-lock.json 
- 1120  npm install
- 1121  npm run dev -- --host
- 1122  pwd
- 1123  cd AWS-SAAS/aws-saas-frontend
- 1124  clear
- 1125  ls
- 1126  cd src/
- 1127  cd pages/
- 1128  ls -al
- 1129  vi Register.jsx 
- 1130  cd ..
- 1131  vi aws-config.js
- 1132  vi pages/Register.jsx 
- 1133  vi aws-config.js
- 1134  cp aws-config.js aws-config.js_1
- 1135  vi aws-config.js
- 1136  vi aws-config.js_1
- 1137  vi aws-config.js
- 1138  \rm aws-config.js
- 1139  mv aws-config.js_1 aws-config.js
- 1140  vi aws-config.js
- 1141  cp aws-config.js aws-config.js_1
- 1142  vi aws-config.js
- 1143  ls
- 1144  vi aws-config.js_1
- 1145  vi aws-config.js
- 1146  clear
- 1147  cd AWS-SAAS/aws-saas-frontend
- 1148  clear
- 1149  npm run dev -- --host
- 1150  clear
- 1151  npm run dev -- --host
- 1152  pwd
- 1153  cd AWS-SAAS/aws-saas-frontend/src/
- 1154  ls -al
- 1155  vi aws-config.js
- 1156  cd ..
- 1157  npm uninstall aws-amplify aws-amplify/auth
- 1158  npm install aws-amplify
- 1159  rm -rf node_modules package-lock.json
- 1160  npm install
- 1161  cd src/
- 1162  vi aws-config.js
- 1163  cd ..
- 1164  vi package.json
- 1165  amplify --version
- 1166  clear
- 1167  ls
- 1168  \m -rf node_modules/.vite
- 1169  \rm -rf node_modules/.vite
- 1170  vi package-lock.json 
- 1171  cd node_modules/.vite
- 1172  ls
- 1173  cd deps/
- 1174  ls -al
- 1175  vi *.js
- 1176  grep assertTokenProviderConfig *
- 1177  cd AWS-SAAS/aws-saas-frontend/node_modules/.vite/deps/
- 1178  ls
- 1179  vi chunk-KK7XCQ6N.js
- 1180  cd ../..
- 1181  cd @aws-amplify/
+ 1092  sudo npm install pm2@latest -g
+ 1093  which npm
+ 1094  npm install pm2@latest -g
+ 1095  ls -al
+ 1096  cd aws-saas-backend/
+ 1097  pm2 start index.js 
+ 1098  cd ../aws-saas-frontend
+ 1099  ls -al
+ 1100  \rm -rf node_modules package-lock.json 
+ 1101  npm install
+ 1102  npm run dev
+ 1103  npm run dev -- --host
+ 1104  cd src/pages/
+ 1105  vi Login.jsx 
+ 1106  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1107  clear
+ 1108  npm run dev -- --host
+ 1109  clear
+ 1110  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/public/
+ 1111  cd ..
+ 1112  cd src/pages/
+ 1113  vi Login.jsx 
+ 1114  clear
+ 1115  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1116  clear
+ 1117  npm run dev -- --host
+ 1118  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/public/
+ 1119  cd ../src/pages/
+ 1120  vi Login.jsx 
+ 1121  ls
+ 1122  cp Login.jsx Login.jsx_SAFE
+ 1123  vi Login.jsx
+ 1124  \rm confirmSignUp.js 
+ 1125  vi Login.jsx
+ 1126  vi Register.jsx 
+ 1127  cp Login.jsx Login.jsx_SAFE_1
+ 1128  mv Login.jsx_SAFE Login.jsx
+ 1129  vi Login.jsx
+ 1130  cp Register.jsx Register.jsx_SAFE
+ 1131  vi Register.jsx
+ 1132  clear
+ 1133  ls
+ 1134  vi Login.jsx
+ 1135  cat Login.jsx
+ 1136  vi Login.jsx
+ 1137  clear
+ 1138  cd ../..
+ 1139  ls
+ 1140  cd ..
+ 1141  ls -al
+ 1142  git status
+ 1143  git diff aws-saas-frontend/src/aws-exports.js
+ 1144  git add aws-saas-frontend/src/pages/Login.jsx_SAFE aws-saas-frontend/src/pages/Login.jsx_SAFE_1 aws-saas-frontend/src/pages/Register.jsx_SAFE
+ 1145  git status
+ 1146  git add aws-saas-frontend/src/aws-exports.js aws-saas-frontend/src/pages/Login.jsx aws-saas-frontend/src/pages/Register.jsx 
+ 1147  git commit -m "Second Rev"
+ 1148  pwd
+ 1149  cd aws-saas-frontend/public/
+ 1150  cd ../src/
+ 1151  clear
+ 1152  ls -al
+ 1153  cd pages/
+ 1154  vi Register.jsx
+ 1155  vi Dashboard.jsx 
+ 1156  cd ../
+ 1157  cd components/
+ 1158  ls -al
+ 1159  vi FileUpload.jsx
+ 1160  diff FileUpload.jsx FileUpload.jsx_Mod 
+ 1161  vi FileUpload.jsx
+ 1162  cat FileUpload.jsx
+ 1163  vi ../aws-exports.js 
+ 1164  cd 
+ 1165  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1166  cd src/
+ 1167  vi aws-exports.js 
+ 1168  pwd
+ 1169  ls
+ 1170  vi DebugAuth.js
+ 1171  cd ..
+ 1172  cd src/
+ 1173  vi App.jsx 
+ 1174  vi main.jsx 
+ 1175  ls
+ 1176  cd components/
+ 1177  ls -al
+ 1178  cd ..
+ 1179  ls -al
+ 1180  vi main.jsx 
+ 1181  clear
  1182  ls
- 1183  cd core/
- 1184  ls
- 1185  cd src/
- 1186  ls
- 1187  cd singleton/
- 1188  ls
- 1189  vi index.ts 
- 1190  cd AWS-SAAS/
- 1191  cd aws-saas-frontend
- 1192  ls -al
- 1193  cd src/
- 1194  ls -al
- 1195  cd ../node_modules/.vite/deps/
- 1196  vi chunk-KK7XCQ6N.js
- 1197  cd ../..
- 1198  cd ..
- 1199  cd src/
- 1200  vi aws-config.js
- 1201  cp aws-config.js aws-config.js_SAFE_1
- 1202  vi aws-config.js
- 1203  cd AWS-SAAS/aws-saas-frontend
+ 1183  pwd
+ 1184  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/
+ 1185  clear
+ 1186  npm run dev -- --host
+ 1187  df -k .
+ 1188  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1189  ls -al
+ 1190  cd src/
+ 1191  ls -al
+ 1192  vi main.jsx 
+ 1193  vi aws-exports.js 
+ 1194  ls
+ 1195  vi DebugAuth.js 
+ 1196  which aws
+ 1197  clear
+ 1198  cd components/
+ 1199  vi FileUpload.jsx
+ 1200  ls -al
+ 1201  vi FileUpload.jsx_Mod 
+ 1202  pwd
+ 1203  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
  1204  clear
  1205  npm run dev -- --host
- 1206  npm uninstall aws-amplify
- 1207  npm install aws-amplify@6.13.1
- 1208  npm run dev -- --host
- 1209  ps -aef | grep assertTokenProviderConfig
- 1210  chunk-KK7XCQ6N.js:
- 1211  ps
- 1212  ps -aef | grep grep
- 1213  ps -aef | grep "grep"
- 1214  ps -A
- 1215  vi src/aws-config.js
- 1216  clear
- 1217  npm run dev -- --host
- 1218  cd AWS-SAAS/aws-saas-frontend
- 1219  cd src/
- 1220  vi aws-config.js
- 1221  cd AWS-SAAS/aws-saas-frontend/src/
- 1222  cp aws-config.js aws-config.js_SAFE_2
+ 1206  df -k .
+ 1207  cd ../..
+ 1208  ls -al
+ 1209  cd ..
+ 1210  ls -al
+ 1211  cd aws/
+ 1212  ls -al
+ 1213  cd dist/
+ 1214  ls -al
+ 1215  cd ../..
+ 1216  ls -al
+ 1217  cd apps
+ 1218  ls -al
+ 1219  cd Full-Stack_Site_with_React/
+ 1220  ls -al
+ 1221  cd ..
+ 1222  ls -al
  1223  cd ..
- 1224  npm run dev -- --host
- 1225  cd AWS-SAAS/aws-saas-frontend
- 1226  clear
- 1227  npm run dev -- --host
- 1228  cd AWS-SAAS/aws-saas-frontend/src/
- 1229  ls -al
- 1230  vi components/FileUpload.jsx 
- 1231  clear
- 1232  cd AWS-SAAS/aws-saas-frontend
- 1233  npm run dev -- --host
- 1234  cd AWS-SAAS/aws-saas-frontend/src/
- 1235  vi components/FileUpload.jsx 
- 1236  cd AWS-SAAS/aws-saas-frontend/node_modules/.vite/deps/
- 1237  ls
- 1238  vi aws-amplify_storage.js
- 1239  exit
- 1240  cd AWS-SAAS/aws-saas-frontend
+ 1224  \rm -rf apps
+ 1225  df -k .
+ 1226  cd ..
+ 1227  ls -al
+ 1228  pwd
+ 1229  cd -
+ 1230  ls -al
+ 1231  cd apps_dynamoDB/
+ 1232  ls -al
+ 1233  cd Full-Stack_Site_with_React/
+ 1234  ls -al
+ 1235  cd back-end/
+ 1236  ls -al
+ 1237  cd ../..
+ 1238  ls -al
+ 1239  df -k .
+ 1240  ls -al
  1241  clear
- 1242  npm run dev -- --host
- 1243  cd AWS-SAAS/aws-saas-frontend
- 1244  clear
- 1245  cd src/
+ 1242  ls -al
+ 1243  git clone https://github.com/srvedulageth/full_stack_DynamoDB.git
+ 1244  cd full_stack_DynamoDB/
+ 1245  mv ../Full-Stack_Site_with_React .
  1246  ls -al
- 1247  vi aws-exports.js 
- 1248  ls
- 1249  vi aws-config.js_1
- 1250  vi aws-config.js_SAFE_1
- 1251  vi aws-config.js*
- 1252  vki aws-config.js
- 1253  vi aws-config.js
- 1254  vi aws-config.js*
- 1255  vi aws-config.js
- 1256  vi components/FileUpload.jsx 
- 1257  vi aws-exports.js 
- 1258  vi components/FileUpload.jsx 
- 1259  vi aws-exports.js 
- 1260  vi components/FileUpload.jsx 
- 1261  pwd
- 1262  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/
- 1263  npm run dev
- 1264  npm run dev -- --host
- 1265  clear
- 1266  npm run dev -- --host
- 1267  pwd
- 1268  cd AWS-SAAS/
- 1269  cd aws-saas-frontend
- 1270  ls -al
- 1271  cd src/components/
+ 1247  ls -al Full-Stack_Site_with_React/*
+ 1248  git add *
+ 1249  git status
+ 1250  cd Full-Stack_Site_with_React/
+ 1251  git status
+ 1252  git add 
+ 1253  git add .
+ 1254  git status
+ 1255  got commit -m "DynamoDB V2"
+ 1256  git commit -m "DynamoDB V2"
+ 1257  git push
+ 1258  ls -al
+ 1259  cd back-end/
+ 1260  ls -al
+ 1261  mv credentials.json ~/
+ 1262  cd ..
+ 1263  git push
+ 1264  git status
+ 1265  cd git push
+ 1266  git push
+ 1267  \rm back-end/.env 
+ 1268  git push
+ 1269  cd ..
+ 1270  ls
+ 1271  cd ..
  1272  ls -al
- 1273  vi FileUpload.jsx_Mod
- 1274  pwd
- 1275  cd ../..
- 1276  pwd
- 1277  cd ../
- 1278  mv aws-saas-frontend/.gitignore .
- 1279  vi .gitignore 
- 1280  git status
- 1281  ls -al
- 1282  cd ..
- 1283  git init
- 1284  cd -
- 1285  git init
- 1286  ls -al
- 1287  git status
- 1288  git commit -m "first commit"
- 1289  git add *
- 1290  git status
- 1291  vi .gitignore 
- 1292  git status
- 1293  git commit -m "first commit"
- 1294  git status
- 1295  pwd
- 1296  ls -al
- 1297  \rm -rf .git
- 1298  git status
- 1299  ls -al
- 1300  ls -al aws-saas-frontend
- 1301  vi .gitignore 
- 1302  git clone https://github.com/srvedulageth/AWS-SAAS.git
- 1303  git status
- 1304  git add *
- 1305  ls -al
- 1306  cd AWS-SAAS/
- 1307  ls
- 1308  ls -al
- 1309  mv ../.gitignore .
- 1310  mv ../aws-saas-* .
- 1311  ls -al
- 1312  cd ..
- 1313  ls -al
- 1314  cd AWS-SAAS/
- 1315  ls -al
- 1316  git add *
- 1317  git status
- 1318  git commit -m "first commit"
- 1319  git status
- 1320  git push
- 1321  clear
- 1322  ls -al
- 1323  cd aws-saas-backend/
- 1324  ps -aef | grep pm2
- 1325  kill -9 1690
- 1326  ps -aef | grep pm2
- 1327  clear
- 1328  ps -aef | grep pm2
- 1329  ls -al
- 1330  \rm -rf node_modules/
- 1331  \rm -rf package-lock.json 
- 1332  npm install
- 1333  ls
- 1334  history | grep pm2
- 1335  vi index.js 
- 1336  pm2 start index.js 
- 1337  grep assertTokenProviderConfig *
- 1338  clear
- 1339  history
- 1340  which pm2
- 1341  which npm
- 1342  sudo npm install -g
- 1343  ls -al
- 1344  cd ../../..
- 1345  ls -al
- 1346  cd apps
- 1347  ls -al
- 1348  cd Full-Stack_Site_with_React/
- 1349  ls -al
- 1350  cd back-end/
- 1351  ls -al
- 1352  vi t1
- 1353  cd ../../
- 1354  cd ../
- 1355  cd AWS-SAAS/
- 1356  ls
- 1357  cd AWS-SAAS/
- 1358  ls -al
- 1359  sudo npm install pm2@latest -g
- 1360  which npm
- 1361  npm install pm2@latest -g
+ 1273  \rm -rf apps_dynamoDB
+ 1274  df -k .
+ 1275  du -sh *
+ 1276  df -k .
+ 1277  pwd
+ 1278  cd /home
+ 1279  du -sh *
+ 1280  df -k .
+ 1281  df -k
+ 1282  sudo apt-get autoremove
+ 1283  df -k .
+ 1284  sudo apt-get clea
+ 1285  df -k .
+ 1286  cd
+ 1287  pwd
+ 1288  ls -al
+ 1289  cd aws/
+ 1290  ls -al
+ 1291  cd dist/
+ 1292  ls -al
+ 1293  cd ../..
+ 1294  ls -al
+ 1295  \rm -rf aws
+ 1296  df -k .
+ 1297  cd AWS-SAAS/
+ 1298  ls
+ 1299  cd AWS-SAAS/
+ 1300  cd aws-saas-frontend
+ 1301  clear
+ 1302  npm run dev -- --host
+ 1303  clear
+ 1304  pwd
+ 1305  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1306  ls -al
+ 1307  cd src/
+ 1308  cd components/
+ 1309  ls -al
+ 1310  vi FileUpload.jsx
+ 1311  cat FileUpload.jsx
+ 1312  vi FileUpload.jsx
+ 1313  vi t1
+ 1314  diff FileUpload.jsx t1
+ 1315  vi FileUpload.jsx t1
+ 1316  diff FileUpload.jsx t1
+ 1317  vi t1
+ 1318  vi FileUpload.jsx
+ 1319  cp FileUpload.jsx FileUpload.jsx_1
+ 1320  mv t1 FileUpload.jsx
+ 1321  vi FileUpload.jsx
+ 1322  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/src/
+ 1323  cd components/
+ 1324  ls -al
+ 1325  vi t1
+ 1326  diff FileUpload.jsx t1
+ 1327  \rm t1
+ 1328  cat FileUpload.jsx
+ 1329  mv t1 FileUpload.jsx
+ 1330  ls -al
+ 1331  vi FileUpload.jsx
+ 1332  cat FileUpload.jsx
+ 1333  vi FileUpload.jsx
+ 1334  clear
+ 1335  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1336  df -k .
+ 1337  ls -al
+ 1338  npm run dev -- --host
+ 1339  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1340  ls -al
+ 1341  cd src/
+ 1342  cd components/
+ 1343  vi FileUpload.jsx
+ 1344  git status
+ 1345  git add ../DebugAuth.js ../aws-exports.js_1 FileUpload.jsx_1 
+ 1346  git status
+ 1347  git add ../aws-exports.js FileUpload.jsx ../main.jsx 
+ 1348  git staus
+ 1349  git add ../aws-exports.js FileUpload.jsx ../main.jsx 
+ 1350  git status
+ 1351  git commit -m "File upload working"
+ 1352  git push
+ 1353  clear
+ 1354  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1355  clear
+ 1356  git status
+ 1357  clear
+ 1358  cd src/
+ 1359  clear
+ 1360  ls -al
+ 1361  cd components/
  1362  ls -al
- 1363  cd aws-saas-backend/
- 1364  pm2 start index.js 
- 1365  cd ../aws-saas-frontend
- 1366  ls -al
- 1367  \rm -rf node_modules package-lock.json 
- 1368  npm install
- 1369  npm run dev
+ 1363  vi FileUpload.jsx
+ 1364  vi FileUpload.jsx_Mod 
+ 1365  git status
+ 1366  vi FileUpload.jsx_Mod 
+ 1367  clear
+ 1368  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1369  clear
  1370  npm run dev -- --host
- 1371  cd src/pages/
- 1372  vi Login.jsx 
- 1373  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1374  clear
+ 1371  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/src/components/
+ 1372  vi FileUpload.jsx
+ 1373  pwd
+ 1374  cd ../..
  1375  npm run dev -- --host
- 1376  clear
- 1377  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/public/
- 1378  cd ..
- 1379  cd src/pages/
- 1380  vi Login.jsx 
- 1381  clear
- 1382  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1383  clear
- 1384  npm run dev -- --host
- 1385  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/public/
- 1386  cd ../src/pages/
- 1387  vi Login.jsx 
- 1388  ls
- 1389  cp Login.jsx Login.jsx_SAFE
- 1390  vi Login.jsx
- 1391  \rm confirmSignUp.js 
- 1392  vi Login.jsx
- 1393  vi Register.jsx 
- 1394  cp Login.jsx Login.jsx_SAFE_1
- 1395  mv Login.jsx_SAFE Login.jsx
- 1396  vi Login.jsx
- 1397  cp Register.jsx Register.jsx_SAFE
- 1398  vi Register.jsx
- 1399  clear
- 1400  ls
- 1401  vi Login.jsx
- 1402  cat Login.jsx
- 1403  vi Login.jsx
- 1404  clear
- 1405  cd ../..
- 1406  ls
- 1407  cd ..
- 1408  ls -al
- 1409  git status
- 1410  git diff aws-saas-frontend/src/aws-exports.js
- 1411  git add aws-saas-frontend/src/pages/Login.jsx_SAFE aws-saas-frontend/src/pages/Login.jsx_SAFE_1 aws-saas-frontend/src/pages/Register.jsx_SAFE
- 1412  git status
- 1413  git add aws-saas-frontend/src/aws-exports.js aws-saas-frontend/src/pages/Login.jsx aws-saas-frontend/src/pages/Register.jsx 
- 1414  git commit -m "Second Rev"
+ 1376  cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-frontend/src/components
+ 1377  vi FileUpload.jsx
+ 1378  ls -al
+ 1379  git status
+ 1380  git diff FileUpload.jsx
+ 1381  vi FileUpload.jsx
+ 1382  git status
+ 1383  pwd
+ 1384  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1385  ls
+ 1386  cd services/
+ 1387  ls -al
+ 1388  vi s3Service.js 
+ 1389  cd ..
+ 1390  vi .env 
+ 1391  vi services/s3Service.js 
+ 1392  vi services/dynamoDBService.js 
+ 1393  cd ..
+ 1394  ls
+ 1395  cd -
+ 1396  ls -al
+ 1397  vi index.js
+ 1398  vi routes.js
+ 1399  cd services/
+ 1400  ls -al
+ 1401  cp dynamoDBService.js dynamoDBService.js_1
+ 1402  vi dynamoDBService.js
+ 1403  vi ../.env 
+ 1404  vi dynamoDBService.js
+ 1405  vi ../.env 
+ 1406  vi ../.env dynamoDBService.js
+ 1407  vi dynamoDBService.js
+ 1408  grep MODULE_NOT_FOUND *
+ 1409  cd ..
+ 1410  grep MODULE_NOT_FOUND *
+ 1411  grep dynamoDBService *
+ 1412  vi routes.js
+ 1413  vi index.js
+ 1414  vi routes.js
  1415  pwd
- 1416  cd aws-saas-frontend/public/
- 1417  cd ../src/
- 1418  clear
- 1419  ls -al
- 1420  cd pages/
- 1421  vi Register.jsx
- 1422  vi Dashboard.jsx 
- 1423  cd ../
- 1424  cd components/
+ 1416  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1417  pwd
+ 1418  ls -al
+ 1419  cd src/
+ 1420  ls -al
+ 1421  cd ..
+ 1422  cd aws-saas-backend/
+ 1423  ls -al
+ 1424  vi index.js 
  1425  ls -al
- 1426  vi FileUpload.jsx
- 1427  diff FileUpload.jsx FileUpload.jsx_Mod 
- 1428  vi FileUpload.jsx
- 1429  cat FileUpload.jsx
- 1430  vi ../aws-exports.js 
- 1431  cd 
- 1432  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1433  cd src/
- 1434  vi aws-exports.js 
- 1435  pwd
- 1436  ls
- 1437  vi DebugAuth.js
- 1438  cd ..
- 1439  cd src/
- 1440  vi App.jsx 
- 1441  vi main.jsx 
- 1442  ls
- 1443  cd components/
- 1444  ls -al
- 1445  cd ..
- 1446  ls -al
- 1447  vi main.jsx 
- 1448  clear
- 1449  ls
- 1450  pwd
- 1451  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/
- 1452  clear
- 1453  npm run dev -- --host
- 1454  df -k .
- 1455  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1456  ls -al
- 1457  cd src/
- 1458  ls -al
- 1459  vi main.jsx 
- 1460  vi aws-exports.js 
- 1461  ls
- 1462  vi DebugAuth.js 
- 1463  which aws
- 1464  clear
- 1465  cd components/
- 1466  vi FileUpload.jsx
- 1467  ls -al
- 1468  vi FileUpload.jsx_Mod 
- 1469  pwd
- 1470  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1471  clear
- 1472  npm run dev -- --host
- 1473  df -k .
- 1474  cd ../..
- 1475  ls -al
- 1476  cd ..
- 1477  ls -al
- 1478  cd aws/
- 1479  ls -al
- 1480  cd dist/
- 1481  ls -al
- 1482  cd ../..
- 1483  ls -al
- 1484  cd apps
- 1485  ls -al
- 1486  cd Full-Stack_Site_with_React/
- 1487  ls -al
- 1488  cd ..
- 1489  ls -al
- 1490  cd ..
- 1491  \rm -rf apps
- 1492  df -k .
- 1493  cd ..
- 1494  ls -al
- 1495  pwd
- 1496  cd -
- 1497  ls -al
- 1498  cd apps_dynamoDB/
- 1499  ls -al
- 1500  cd Full-Stack_Site_with_React/
- 1501  ls -al
- 1502  cd back-end/
- 1503  ls -al
- 1504  cd ../..
- 1505  ls -al
- 1506  df -k .
- 1507  ls -al
+ 1426  ls -l middlewares/
+ 1427  vi middlewares/authMiddleware.js 
+ 1428  ls -al *
+ 1429  ls -al * > t1
+ 1430  vi t1
+ 1431  vi index.js 
+ 1432  cp routes.js routes.js_1
+ 1433  vi routes.js
+ 1434  cp index.js index.js_1
+ 1435  vi index.js
+ 1436  ps -aef | pm2
+ 1437  ps -aef | grep pm2
+ 1438  kill -9 80464
+ 1439  pm2 start index.js 
+ 1440  pm2 save
+ 1441  pm2 start index.js 
+ 1442  pm2 restart index.js --log my_log 
+ 1443  pm2 my_log
+ 1444  pm2 logs
+ 1445  pm2 restart index.js --log my_log 
+ 1446  pm2 logs
+ 1447  pm2 restart index.js --log my_log 
+ 1448  pm2 logs
+ 1449  pm2 restart index.js --log my_log 
+ 1450  pm2 logs
+ 1451  vi ~/.pm2/pm2.log 
+ 1452  pm2 stop index.js 
+ 1453  pm2 start index.js --log my_log 
+ 1454  pm2 logs
+ 1455  vi ~/.pm2/pm2.log 
+ 1456  \rm ~/.pm2/pm2.log 
+ 1457  pm2 logs
+ 1458  vi ~/.pm2/pm2.log 
+ 1459  vi ~/.pm2/logs/index-error.log 
+ 1460  cd services/
+ 1461  vi s3Service.js 
+ 1462  \rm ~/.pm2/logs/index-error.log 
+ 1463  pm2 stop index.js --log my_log 
+ 1464  pm2 start index.js --log my_log 
+ 1465  cd ..
+ 1466  pm2 start index.js --log my_log 
+ 1467  pm2 stop index.js --log my_log 
+ 1468  pm2 start index.js --log my_log 
+ 1469  vi ~/.pm2/logs/index-error.log 
+ 1470  pm2 logs
+ 1471  pm2 restart index.js --log my_log 
+ 1472  pm2 logs
+ 1473  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1474  clear
+ 1475  npm run dev -- --host
+ 1476  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1477  clear
+ 1478  pwd
+ 1479  vi index.js
+ 1480  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": "1", "name": "Test Item", "description": "This is a test"}'
+ 1481  curl -X GET http://localhost:5000/api/items
+ 1482  vi .env 
+ 1483  curl -X GET http://localhost:5000/api/items
+ 1484  vi middlewares/authMiddleware.js 
+ 1485  curl -X GET http://localhost:5000/api/items
+ 1486  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": "1", "name": "Test Item", "description": "This is a test"}'
+ 1487  clear
+ 1488  vi index.js
+ 1489  ls
+ 1490  grep -r config services/*
+ 1491  vi services/dynamoDBService.js
+ 1492  vi index.js
+ 1493  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": "1", "name": "Test Item", "description": "This is a test"}'
+ 1494  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": 2, "name": "Test Item", "description": "This is a test"}'
+ 1495  clear
+ 1496  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": 3, "name": "Test Item 1", "description": "This is a game"}'
+ 1497  vi services/dynamoDBService.js
+ 1498  curl -X GET http://localhost:5000/api/items
+ 1499  clear
+ 1500  vi middlewares/authMiddleware.js 
+ 1501  cd middlewares/
+ 1502  cp authMiddleware.js authMiddleware.js_1
+ 1503  vi authMiddleware.js
+ 1504  vi authMiddleware.js_1 
+ 1505  cd ..
+ 1506  vi index.js
+ 1507  curl -X GET http://localhost:5000/api/items
  1508  clear
- 1509  ls -al
- 1510  git clone https://github.com/srvedulageth/full_stack_DynamoDB.git
- 1511  cd full_stack_DynamoDB/
- 1512  mv ../Full-Stack_Site_with_React .
- 1513  ls -al
- 1514  ls -al Full-Stack_Site_with_React/*
- 1515  git add *
- 1516  git status
- 1517  cd Full-Stack_Site_with_React/
- 1518  git status
- 1519  git add 
- 1520  git add .
- 1521  git status
- 1522  got commit -m "DynamoDB V2"
- 1523  git commit -m "DynamoDB V2"
- 1524  git push
- 1525  ls -al
- 1526  cd back-end/
- 1527  ls -al
- 1528  mv credentials.json ~/
- 1529  cd ..
- 1530  git push
- 1531  git status
- 1532  cd git push
- 1533  git push
- 1534  \rm back-end/.env 
- 1535  git push
- 1536  cd ..
- 1537  ls
- 1538  cd ..
- 1539  ls -al
- 1540  \rm -rf apps_dynamoDB
- 1541  df -k .
- 1542  du -sh *
- 1543  df -k .
- 1544  pwd
- 1545  cd /home
- 1546  du -sh *
- 1547  df -k .
- 1548  df -k
- 1549  sudo apt-get autoremove
- 1550  df -k .
- 1551  sudo apt-get clea
- 1552  df -k .
- 1553  cd
- 1554  pwd
- 1555  ls -al
- 1556  cd aws/
- 1557  ls -al
- 1558  cd dist/
- 1559  ls -al
- 1560  cd ../..
- 1561  ls -al
- 1562  \rm -rf aws
- 1563  df -k .
- 1564  cd AWS-SAAS/
- 1565  ls
- 1566  cd AWS-SAAS/
- 1567  cd aws-saas-frontend
- 1568  clear
- 1569  npm run dev -- --host
- 1570  clear
- 1571  pwd
- 1572  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1573  ls -al
- 1574  cd src/
- 1575  cd components/
- 1576  ls -al
- 1577  vi FileUpload.jsx
- 1578  cat FileUpload.jsx
- 1579  vi FileUpload.jsx
- 1580  vi t1
- 1581  diff FileUpload.jsx t1
- 1582  vi FileUpload.jsx t1
- 1583  diff FileUpload.jsx t1
- 1584  vi t1
- 1585  vi FileUpload.jsx
- 1586  cp FileUpload.jsx FileUpload.jsx_1
- 1587  mv t1 FileUpload.jsx
- 1588  vi FileUpload.jsx
- 1589  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/src/
- 1590  cd components/
- 1591  ls -al
- 1592  vi t1
- 1593  diff FileUpload.jsx t1
- 1594  \rm t1
- 1595  cat FileUpload.jsx
- 1596  mv t1 FileUpload.jsx
- 1597  ls -al
- 1598  vi FileUpload.jsx
- 1599  cat FileUpload.jsx
- 1600  vi FileUpload.jsx
- 1601  clear
- 1602  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1603  df -k .
- 1604  ls -al
- 1605  npm run dev -- --host
- 1606  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1607  ls -al
- 1608  cd src/
- 1609  cd components/
- 1610  vi FileUpload.jsx
- 1611  git status
- 1612  git add ../DebugAuth.js ../aws-exports.js_1 FileUpload.jsx_1 
- 1613  git status
- 1614  git add ../aws-exports.js FileUpload.jsx ../main.jsx 
- 1615  git staus
- 1616  git add ../aws-exports.js FileUpload.jsx ../main.jsx 
- 1617  git status
- 1618  git commit -m "File upload working"
- 1619  git push
- 1620  clear
- 1621  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1622  clear
- 1623  git status
- 1624  clear
- 1625  cd src/
- 1626  clear
- 1627  ls -al
- 1628  cd components/
- 1629  ls -al
- 1630  vi FileUpload.jsx
- 1631  vi FileUpload.jsx_Mod 
- 1632  git status
- 1633  vi FileUpload.jsx_Mod 
- 1634  clear
- 1635  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1636  clear
- 1637  npm run dev -- --host
- 1638  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend/src/components/
- 1639  vi FileUpload.jsx
- 1640  pwd
- 1641  cd ../..
- 1642  npm run dev -- --host
- 1643  cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-frontend/src/components
- 1644  vi FileUpload.jsx
- 1645  ls -al
- 1646  git status
- 1647  git diff FileUpload.jsx
- 1648  vi FileUpload.jsx
- 1649  git status
- 1650  pwd
- 1651  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
- 1652  ls
- 1653  cd services/
- 1654  ls -al
- 1655  vi s3Service.js 
- 1656  cd ..
- 1657  vi .env 
- 1658  vi services/s3Service.js 
- 1659  vi services/dynamoDBService.js 
- 1660  cd ..
- 1661  ls
- 1662  cd -
- 1663  ls -al
- 1664  vi index.js
- 1665  vi routes.js
- 1666  cd services/
- 1667  ls -al
- 1668  cp dynamoDBService.js dynamoDBService.js_1
- 1669  vi dynamoDBService.js
- 1670  vi ../.env 
- 1671  vi dynamoDBService.js
- 1672  vi ../.env 
- 1673  vi ../.env dynamoDBService.js
- 1674  vi dynamoDBService.js
- 1675  grep MODULE_NOT_FOUND *
- 1676  cd ..
- 1677  grep MODULE_NOT_FOUND *
- 1678  grep dynamoDBService *
- 1679  vi routes.js
- 1680  vi index.js
- 1681  vi routes.js
- 1682  pwd
- 1683  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1684  pwd
- 1685  ls -al
- 1686  cd src/
- 1687  ls -al
- 1688  cd ..
- 1689  cd aws-saas-backend/
+ 1509  curl -X GET http://localhost:5000/api/items
+ 1510  clear
+ 1511  grep Auth *
+ 1512  cd services/
+ 1513  grep Auth *
+ 1514  cd ../../aws-saas-frontend
+ 1515  ls
+ 1516  grep Auth *
+ 1517  cd src/
+ 1518  grep Auth * -r
+ 1519  vi aws-exports.js
+ 1520  clear; cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend
+ 1521  ps -aef | pm2
+ 1522  ps -aef | grep pm2
+ 1523  kill -9 110948
+ 1524  pm2 start index.js --log my_log
+ 1525  pm2 logs
+ 1526  vi ~/.pm2/logs/index-error.log 
+ 1527  pm2 logs
+ 1528  vi ~/.pm2/logs/index-error.log 
+ 1529  vi t1
+ 1530  cat t1
+ 1531  pm2 logs
+ 1532  pm2 restart index.js --log my_log
+ 1533  pm2 logs
+ 1534  pm2 restart index.js --log my_log
+ 1535  pm2 logs
+ 1536  pm2 restart index.js --log my_log
+ 1537  pm2 logs
+ 1538  \rm /home/ubuntu/.pm2/logs/index-error.log
+ 1539  \rm /home/ubuntu/.pm2/logs/index-error.log
+ 1540  pm2 logs
+ 1541  pm2 restart index.js --log my_log
+ 1542  pm2 logs
+ 1543  npm install jwk-to-pem
+ 1544  pm2 restart index.js --log my_log
+ 1545  pm2 logs
+ 1546  npm install axios
+ 1547  pm2 restart index.js --log my_log
+ 1548  pm2 logs
+ 1549  vi /home/ubuntu/.pm2/logs/index-error.log
+ 1550  \rm /home/ubuntu/.pm2/logs/index-error.log
+ 1551  pm2 logs
+ 1552  clear
+ 1553  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1554  npm run dev -- --host
+ 1555  clear
+ 1556  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1557  pwd
+ 1558  clear
+ 1559  ps
+ 1560  history
+ 1561  curl -X GET http://localhost:5000/api/items
+ 1562  clea
+ 1563  clear
+ 1564  ls
+ 1565  vi ../aws-saas-frontend/src/DebugAuth.js 
+ 1566  ls -al
+ 1567  cd services/
+ 1568  ls
+ 1569  vi dynamoDBService.js
+ 1570  cat dynamoDBService.js
+ 1571  clear
+ 1572  ls -al
+ 1573  vi ../aws-saas-frontend/src/DebugAuth.js 
+ 1574  vi ../../aws-saas-frontend/src/DebugAuth.js 
+ 1575  cd ../../aws-saas-frontend/src/
+ 1576  cp DebugAuth.js DebugAuth.js_1
+ 1577  vi DebugAuth.js
+ 1578  mv DebugAuth.js DebugAuth.js_2
+ 1579  mv DebugAuth.js_1 DebugAuth.js
+ 1580  clear
+ 1581  cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend
+ 1582  pm2 logs
+ 1583  history
+ 1584  historypm2 restart index.js --log my_log
+ 1585  pm2 restart index.js --log my_log
+ 1586  pm2 logs
+ 1587  cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1588  npm run dev -- --host
+ 1589  clear
+ 1590  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1591  clear
+ 1592  pm2 logs
+ 1593  pm2 logs re
+ 1594  pm2 logs
+ 1595  history | grep pm2
+ 1596  pm2 restart index.js --log my_log
+ 1597  pm2 logs
+ 1598  clear
+ 1599  pm2 restart index.js --log my_log
+ 1600  pm2 logs
+ 1601  pm2 restart index.js --log my_log
+ 1602  pm2 logs
+ 1603  cd AWS-SAAS/AWS-SAAS/
+ 1604  cd aws-saas-frontend
+ 1605  clear
+ 1606  cd ../aws-saas-backend/
+ 1607  clear
+ 1608  ls
+ 1609  history
+ 1610  curl -X GET http://localhost:5000/api/items
+ 1611  cd services/
+ 1612  vi dynamoDBService.js
+ 1613  ls- al
+ 1614  ls -al
+ 1615  diff dynamoDBService.js dynamoDBService.js_1 
+ 1616  cp dynamoDBService.js dynamoDBService.js_2
+ 1617  vi dynamoDBService.js
+ 1618  cd ..
+ 1619  curl -X GET http://localhost:5000/api/items
+ 1620  vi jwt_token.json
+ 1621  clear
+ 1622  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer jwt_toekn.json"
+ 1623  cat ../aws-saas-frontend/src/DebugAuth.js
+ 1624  vi ../aws-saas-frontend/src/DebugAuth.js
+ 1625  echo "eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAyNzg5MiwiaWF0IjoxNzQxMDI0MjkyLCJqdGkiOiJhMDc2MDAxZC1lYTNiLTQ4M2UtYWRmMy0wNjZlYzlkODI3MzMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.yAKEZvHM6MCoTN3ckQh0rMZ8A7u00C2RF-IA7XooBinY7tKLqOUzJYMpmplMyVx2bL3CRw2jBOAbw66mH5O82ur_d2ub8oB4MLkcFbniksYSe_-2i7BiAyGs222OASwXsAmzTyeFol-TYMLw1joZvaeeKUisUFSQW06aN0jBEdHYiKMNra7rtewXxpIHzYPzSxsLElJk1jkXTTIbGm_hzkg05KxcAzw3QOFVFAn8hhSmN1OejV4uqIjzHn4pyVyVfx-LzBMTQ5pvirPg5kIHU1jCx4n29eayBuvRixxO14BQ27SGC6RBq-4Pi3hlxDohiHj5tv4umZg0yMdz6K56hQ" > jwt_token_1.txt
+ 1626  vi jwt_token_1.txt 
+ 1627  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1628  vi middlewares/authMiddleware.js
+ 1629  cd middlewares/
+ 1630  ls
+ 1631  vi authMiddleware.js_1 
+ 1632  clear
+ 1633  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1634  cd ..
+ 1635  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1636  curl -X GET http://localhost:5000/api/items
+ 1637  vi middlewares/authMiddleware.js
+ 1638  cd ..
+ 1639  ls
+ 1640  cd -
+ 1641  cd services/
+ 1642  ls
+ 1643  vi dynamoDBService.js
+ 1644  diff dynamoDBService.js dynamoDBService.js_2
+ 1645  mv dynamoDBService.js_2 dynamoDBService.js
+ 1646  cd ..
+ 1647  clear
+ 1648  curl -X GET http://localhost:5000/api/items
+ 1649  clear
+ 1650  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1651  clear
+ 1652  npm run dev -- --host
+ 1653  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1654  pm2 logs
+ 1655  clear
+ 1656  history > t1
+ 1657  vi t1
+ 1658  pm2 restart index.js --log my_log
+ 1659  pm2 logs
+ 1660  pm2 restart index.js --log my_log
+ 1661  pm2 logs
+ 1662  pm2 restart index.js --log my_log
+ 1663  pm2 logs
+ 1664  pm2 restart index.js --log my_log
+ 1665  pm2 logs
+ 1666  vi jwt_token_1.txt 
+ 1667  pm2 restart index.js --log my_log
+ 1668  pm2 logs
+ 1669  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1670  clear
+ 1671  curl -X GET http://localhost:5000/api/items
+ 1672  clear
+ 1673  ls -al
+ 1674  cd services/
+ 1675  ls -al
+ 1676  vi dynamoDBService.js
+ 1677  cd ..
+ 1678  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1679  clear
+ 1680  vi middlewares/
+ 1681  vi middlewares/authMiddleware.js
+ 1682  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1683  vi middlewares/authMiddleware.js
+ 1684  vi t1
+ 1685  cd middlewares/
+ 1686  vi t1
+ 1687  diff t1 authMiddleware.js
+ 1688  diff t1 authMiddleware.jsmv authMiddleware.js authMiddleware.js_2
+ 1689  mv authMiddleware.js authMiddleware.js_2
  1690  ls -al
- 1691  vi index.js 
- 1692  ls -al
- 1693  ls -l middlewares/
- 1694  vi middlewares/authMiddleware.js 
- 1695  ls -al *
- 1696  ls -al * > t1
- 1697  vi t1
- 1698  vi index.js 
- 1699  cp routes.js routes.js_1
- 1700  vi routes.js
- 1701  cp index.js index.js_1
- 1702  vi index.js
- 1703  ps -aef | pm2
- 1704  ps -aef | grep pm2
- 1705  kill -9 80464
- 1706  pm2 start index.js 
- 1707  pm2 save
- 1708  pm2 start index.js 
- 1709  pm2 restart index.js --log my_log 
- 1710  pm2 my_log
- 1711  pm2 logs
- 1712  pm2 restart index.js --log my_log 
- 1713  pm2 logs
- 1714  pm2 restart index.js --log my_log 
- 1715  pm2 logs
- 1716  pm2 restart index.js --log my_log 
- 1717  pm2 logs
- 1718  vi ~/.pm2/pm2.log 
- 1719  pm2 stop index.js 
- 1720  pm2 start index.js --log my_log 
- 1721  pm2 logs
- 1722  vi ~/.pm2/pm2.log 
- 1723  \rm ~/.pm2/pm2.log 
- 1724  pm2 logs
- 1725  vi ~/.pm2/pm2.log 
- 1726  vi ~/.pm2/logs/index-error.log 
- 1727  cd services/
- 1728  vi s3Service.js 
- 1729  \rm ~/.pm2/logs/index-error.log 
- 1730  pm2 stop index.js --log my_log 
- 1731  pm2 start index.js --log my_log 
- 1732  cd ..
- 1733  pm2 start index.js --log my_log 
- 1734  pm2 stop index.js --log my_log 
- 1735  pm2 start index.js --log my_log 
- 1736  vi ~/.pm2/logs/index-error.log 
- 1737  pm2 logs
- 1738  pm2 restart index.js --log my_log 
- 1739  pm2 logs
- 1740  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1741  clear
- 1742  npm run dev -- --host
- 1743  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
- 1744  clear
- 1745  pwd
- 1746  vi index.js
- 1747  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": "1", "name": "Test Item", "description": "This is a test"}'
- 1748  curl -X GET http://localhost:5000/api/items
- 1749  vi .env 
- 1750  curl -X GET http://localhost:5000/api/items
- 1751  vi middlewares/authMiddleware.js 
- 1752  curl -X GET http://localhost:5000/api/items
- 1753  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": "1", "name": "Test Item", "description": "This is a test"}'
- 1754  clear
- 1755  vi index.js
- 1756  ls
- 1757  grep -r config services/*
- 1758  vi services/dynamoDBService.js
- 1759  vi index.js
- 1760  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": "1", "name": "Test Item", "description": "This is a test"}'
- 1761  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": 2, "name": "Test Item", "description": "This is a test"}'
+ 1691  mv t1 authMiddleware.js
+ 1692  vi authMiddleware.js
+ 1693  clear
+ 1694  cd ..
+ 1695  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1696  vi ../aws-saas-frontend/src/
+ 1697  vi ../aws-saas-frontend/src/DebugAuth.js
+ 1698  vi middlewares/authMiddleware.js
+ 1699  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1700  vi middlewares/authMiddleware.js
+ 1701  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1702  vi jwt_token_1.txt 
+ 1703  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1704  vi middlewares/authMiddleware.js
+ 1705  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1706  clear
+ 1707  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1708  clear
+ 1709  npm run dev -- --host
+ 1710  pwd
+ 1711  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1712  clear
+ 1713  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1714  pwd
+ 1715  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1716  vi t1
+ 1717  pm2 restart index.js --log my_log
+ 1718  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1719  pm2 logs
+ 1720  pwd
+ 1721  vi middlewares/authMiddleware.js
+ 1722  pm2 logs
+ 1723  clear
+ 1724  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1725  clear
+ 1726  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1727  vi jwt_token_1.txt 
+ 1728  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1729  pwd
+ 1730  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1731  clear
+ 1732  npm run dev -- --host
+ 1733  clear
+ 1734  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1735  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1736  vi jwt_token_1.txt 
+ 1737  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1738  clear
+ 1739  cd ..
+ 1740  git status
+ 1741  git status > t2
+ 1742  vi t2
+ 1743  cat t2
+ 1744  git add aws-saas-backend/.env aws-saas-backend/index.js aws-saas-backend/middlewares/authMiddleware.js aws-saas-backend/package.json aws-saas-backend/routes.js aws-saas-backend/services/dynamoDBService.js aws-saas-backend/services/s3Service.js aws-saas-frontend/src/DebugAuth.js aws-saas-frontend/src/components/FileUpload.jsx aws-saas-backend/index.js_1 aws-saas-backend/jwt_token.json aws-saas-backend/jwt_token_1.txt aws-saas-backend/middlewares/authMiddleware.js_1 aws-saas-backend/middlewares/authMiddleware.js_2 aws-saas-backend/my_log aws-saas-backend/routes.js_1 aws-saas-backend/routes.js_2 aws-saas-backend/services/dynamoDBService.js_1 aws-saas-backend/t1 aws-saas-frontend/src/DebugAuth.js_2
+ 1745  git status
+ 1746  git commit -m "backend authentication"
+ 1747  git status
+ 1748  git push
+ 1749  clear
+ 1750  cd aws-saas-frontend
+ 1751  vi .env 
+ 1752  clear
+ 1753  ls -al
+ 1754  cd src/
+ 1755  ls -al
+ 1756  vi App.jsx 
+ 1757  vi DebugAuth.js
+ 1758  git status
+ 1759  git restore DebugAuth.js 
+ 1760  git status
+ 1761  vi api.js
  1762  clear
- 1763  curl -X POST http://localhost:5000/api/item -H "Content-Type: application/json" -d '{"id": 3, "name": "Test Item 1", "description": "This is a game"}'
- 1764  vi services/dynamoDBService.js
- 1765  curl -X GET http://localhost:5000/api/items
- 1766  clear
- 1767  vi middlewares/authMiddleware.js 
- 1768  cd middlewares/
- 1769  cp authMiddleware.js authMiddleware.js_1
- 1770  vi authMiddleware.js
- 1771  vi authMiddleware.js_1 
- 1772  cd ..
- 1773  vi index.js
- 1774  curl -X GET http://localhost:5000/api/items
- 1775  clear
- 1776  curl -X GET http://localhost:5000/api/items
+ 1763  ls -al
+ 1764  cd pages/
+ 1765  sl -al
+ 1766  vi Dashboard.jsx 
+ 1767  cd ../components/
+ 1768  vi FileUpload.jsx
+ 1769  clear
+ 1770  vi FileUpload.jsx
+ 1771  cat FileUpload.jsx
+ 1772  git status
+ 1773  git diff FileUpload.jsx
+ 1774  git restore FileUpload.jsx 
+ 1775  cp FileUpload.jsx FileUpload.jsx_1
+ 1776  vi FileUpload.jsx
  1777  clear
- 1778  grep Auth *
- 1779  cd services/
- 1780  grep Auth *
- 1781  cd ../../aws-saas-frontend
- 1782  ls
- 1783  grep Auth *
- 1784  cd src/
- 1785  grep Auth * -r
- 1786  vi aws-exports.js
- 1787  clear; cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend
- 1788  ps -aef | pm2
- 1789  ps -aef | grep pm2
- 1790  kill -9 110948
- 1791  pm2 start index.js --log my_log
- 1792  pm2 logs
- 1793  vi ~/.pm2/logs/index-error.log 
- 1794  pm2 logs
- 1795  vi ~/.pm2/logs/index-error.log 
- 1796  vi t1
- 1797  cat t1
- 1798  pm2 logs
- 1799  pm2 restart index.js --log my_log
- 1800  pm2 logs
- 1801  pm2 restart index.js --log my_log
- 1802  pm2 logs
- 1803  pm2 restart index.js --log my_log
- 1804  pm2 logs
- 1805  \rm /home/ubuntu/.pm2/logs/index-error.log
- 1806  \rm /home/ubuntu/.pm2/logs/index-error.log
- 1807  pm2 logs
- 1808  pm2 restart index.js --log my_log
- 1809  pm2 logs
- 1810  npm install jwk-to-pem
- 1811  pm2 restart index.js --log my_log
- 1812  pm2 logs
- 1813  npm install axios
- 1814  pm2 restart index.js --log my_log
- 1815  pm2 logs
- 1816  vi /home/ubuntu/.pm2/logs/index-error.log
- 1817  \rm /home/ubuntu/.pm2/logs/index-error.log
- 1818  pm2 logs
- 1819  clear
- 1820  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1821  npm run dev -- --host
- 1822  clear
- 1823  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1778  git status
+ 1779  cd ..
+ 1780  cd ../../aws-saas-backend/
+ 1781  clear
+ 1782  ls -al
+ 1783  cd services/
+ 1784  vi s3Service.js 
+ 1785  mv s3Service.js s3Service.js_1
+ 1786  vi s3Service.js
+ 1787  pwd
+ 1788  vi s3Service.js
+ 1789  cd ..
+ 1790  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1791  cd ../
+ 1792  ls -al
+ 1793  cd aws-saas-frontend
+ 1794  sl -al
+ 1795  ls -al
+ 1796  cd src/
+ 1797  ls -al
+ 1798  vi api.js 
+ 1799  clear
+ 1800  cd ../../aws-saas-backend/
+ 1801  vi jwt_token_1.txt 
+ 1802  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1803  ls
+ 1804  ls -al
+ 1805  vi my_log 
+ 1806  vi t3
+ 1807  cat t3
+ 1808  curl -X POST http://localhost:5000/api/s3/upload -H "Authorization: Bearer jwt_token_1.txt" -H "Content-Type: application/json" -d '{"fileName": "my_log"}'
+ 1809  vi t3
+ 1810  cat t3
+ 1811  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer jwt_token_1.txt"
+ 1812  clear
+ 1813  ls -al
+ 1814  vi routes.js
+ 1815  ls
+ 1816  vi index.js
+ 1817  cd ../aws-saas-frontend/
+ 1818  clear
+ 1819  npm run dev -- --host
+ 1820  clear
+ 1821  ls -al
+ 1822  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer jwt_token_1.txt"
+ 1823  vi t2
  1824  pwd
- 1825  clear
- 1826  ps
- 1827  history
- 1828  curl -X GET http://localhost:5000/api/items
- 1829  clea
- 1830  clear
- 1831  ls
- 1832  vi ../aws-saas-frontend/src/DebugAuth.js 
- 1833  ls -al
- 1834  cd services/
- 1835  ls
- 1836  vi dynamoDBService.js
- 1837  cat dynamoDBService.js
- 1838  clear
- 1839  ls -al
- 1840  vi ../aws-saas-frontend/src/DebugAuth.js 
- 1841  vi ../../aws-saas-frontend/src/DebugAuth.js 
- 1842  cd ../../aws-saas-frontend/src/
- 1843  cp DebugAuth.js DebugAuth.js_1
- 1844  vi DebugAuth.js
- 1845  mv DebugAuth.js DebugAuth.js_2
- 1846  mv DebugAuth.js_1 DebugAuth.js
- 1847  clear
- 1848  cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-backend
- 1849  pm2 logs
- 1850  history
- 1851  historypm2 restart index.js --log my_log
- 1852  pm2 restart index.js --log my_log
- 1853  pm2 logs
- 1854  cd /home/ubuntu/AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1855  npm run dev -- --host
- 1856  clear
- 1857  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
- 1858  clear
+ 1825  cd ../aws-saas-backend/
+ 1826  clear
+ 1827  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer jwt_token_1.txt"
+ 1828  ls -al
+ 1829  git status
+ 1830  vi routes.js
+ 1831  vi index.js
+ 1832  clear
+ 1833  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer jwt_token_1.txt"
+ 1834  vi jwt_token_1.txt 
+ 1835  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer jwt_token_1.txt"
+ 1836  vi middlewares/authMiddleware.js
+ 1837  vi t2
+ 1838  ls -al
+ 1839  vi t3
+ 1840  vi t1
+ 1841  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1842  vi t3
+ 1843  clear
+ 1844  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1845  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1846  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1847  vi t1
+ 1848  vi middlewares/authMiddleware.js
+ 1849  vi t1
+ 1850  vi middlewares/authMiddleware.js
+ 1851  history > t1
+ 1852  vi t1
+ 1853  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1854  vi t1
+ 1855  pm2 restart index.js --log my_log
+ 1856  pm2 logs
+ 1857  clear
+ 1858  pwd
  1859  pm2 logs
- 1860  pm2 logs re
- 1861  pm2 logs
- 1862  history | grep pm2
+ 1860  cd services/
+ 1861  vi s3Service.js
+ 1862  cd ..
  1863  pm2 restart index.js --log my_log
  1864  pm2 logs
- 1865  clear
- 1866  pm2 restart index.js --log my_log
- 1867  pm2 logs
- 1868  pm2 restart index.js --log my_log
- 1869  pm2 logs
- 1870  cd AWS-SAAS/AWS-SAAS/
- 1871  cd aws-saas-frontend
- 1872  clear
- 1873  cd ../aws-saas-backend/
- 1874  clear
- 1875  ls
- 1876  history
- 1877  curl -X GET http://localhost:5000/api/items
- 1878  cd services/
- 1879  vi dynamoDBService.js
- 1880  ls- al
- 1881  ls -al
- 1882  diff dynamoDBService.js dynamoDBService.js_1 
- 1883  cp dynamoDBService.js dynamoDBService.js_2
- 1884  vi dynamoDBService.js
- 1885  cd ..
- 1886  curl -X GET http://localhost:5000/api/items
- 1887  vi jwt_token.json
- 1888  clear
- 1889  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer jwt_toekn.json"
- 1890  cat ../aws-saas-frontend/src/DebugAuth.js
+ 1865  pm2 restart index.js --log my_log
+ 1866  pm2 logs
+ 1867  ps
+ 1868  ps -aef | grep pm2
+ 1869  kill 115515
+ 1870  ps -aef | grep pm2
+ 1871  pm2 start index.js --log my_log
+ 1872  pm2 logs
+ 1873  rm my_log /home/ubuntu/.pm2/logs/index-error.log
+ 1874  pm2 restart index.js --log my_log
+ 1875  pm2 logs
+ 1876  vi services/s3Service.js
+ 1877  ls
+ 1878  vi routes.js
+ 1879  clear
+ 1880  pm2 restart index.js --log my_log
+ 1881  pm2 logs
+ 1882  vi routes.js
+ 1883  pm2 restart index.js --log my_log
+ 1884  pm2 logs
+ 1885  clear
+ 1886  rm my_log /home/ubuntu/.pm2/logs/index-error.log
+ 1887  ps -aef | grep pm2
+ 1888  kill -9 135831
+ 1889  pm2 start index.js --log my_log
+ 1890  pm2 logs
  1891  vi ../aws-saas-frontend/src/DebugAuth.js
- 1892  echo "eyJraWQiOiJlRUFubVhLZGJxWWwxVEh5bEJRUW1VdEtISEUyUElQUisxWnViUFhRbndnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTM5Mjk0ZS1kMDMxLTcwZTYtMWY5MS01ZTcxMzI1N2M1N2IiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfbUowbndmSGQyIiwiY29nbml0bzp1c2VybmFtZSI6IjI5MzkyOTRlLWQwMzEtNzBlNi0xZjkxLTVlNzEzMjU3YzU3YiIsIm9yaWdpbl9qdGkiOiIyZTZiMzk3ZS01NjQyLTQ4NmMtYTViYi1hZDc0YmYxMmUyNWIiLCJhdWQiOiI3ZDRwY3M1cDFmZmx2ZDkwYmJqYnBiNzl0MiIsImV2ZW50X2lkIjoiMWRkYmExYTYtZjA5NC00OTkyLThmYjEtMDA5YjU1ODU5M2YxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NDA4ODMxNDYsImV4cCI6MTc0MTAyNzg5MiwiaWF0IjoxNzQxMDI0MjkyLCJqdGkiOiJhMDc2MDAxZC1lYTNiLTQ4M2UtYWRmMy0wNjZlYzlkODI3MzMiLCJlbWFpbCI6InNydmVkdWxhNzBAZ21haWwuY29tIn0.yAKEZvHM6MCoTN3ckQh0rMZ8A7u00C2RF-IA7XooBinY7tKLqOUzJYMpmplMyVx2bL3CRw2jBOAbw66mH5O82ur_d2ub8oB4MLkcFbniksYSe_-2i7BiAyGs222OASwXsAmzTyeFol-TYMLw1joZvaeeKUisUFSQW06aN0jBEdHYiKMNra7rtewXxpIHzYPzSxsLElJk1jkXTTIbGm_hzkg05KxcAzw3QOFVFAn8hhSmN1OejV4uqIjzHn4pyVyVfx-LzBMTQ5pvirPg5kIHU1jCx4n29eayBuvRixxO14BQ27SGC6RBq-4Pi3hlxDohiHj5tv4umZg0yMdz6K56hQ" > jwt_token_1.txt
- 1893  vi jwt_token_1.txt 
- 1894  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1895  vi middlewares/authMiddleware.js
- 1896  cd middlewares/
- 1897  ls
- 1898  vi authMiddleware.js_1 
- 1899  clear
- 1900  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1901  cd ..
- 1902  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1903  curl -X GET http://localhost:5000/api/items
- 1904  vi middlewares/authMiddleware.js
- 1905  cd ..
- 1906  ls
- 1907  cd -
- 1908  cd services/
- 1909  ls
- 1910  vi dynamoDBService.js
- 1911  diff dynamoDBService.js dynamoDBService.js_2
- 1912  mv dynamoDBService.js_2 dynamoDBService.js
- 1913  cd ..
- 1914  clear
- 1915  curl -X GET http://localhost:5000/api/items
- 1916  clear
- 1917  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1918  clear
- 1919  npm run dev -- --host
- 1920  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
- 1921  pm2 logs
- 1922  clear
- 1923  history > t1
- 1924  vi t1
- 1925  pm2 restart index.js --log my_log
- 1926  pm2 logs
- 1927  pm2 restart index.js --log my_log
- 1928  pm2 logs
- 1929  pm2 restart index.js --log my_log
- 1930  pm2 logs
- 1931  pm2 restart index.js --log my_log
- 1932  pm2 logs
- 1933  vi jwt_token_1.txt 
- 1934  pm2 restart index.js --log my_log
- 1935  pm2 logs
- 1936  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1892  pwd
+ 1893  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1894  clear
+ 1895  pwd
+ 1896  npm run dev -- --host
+ 1897  cd AWS-SAAS/AWS-SAAS/
+ 1898  ls
+ 1899  cd aws-saas-frontend
+ 1900  git status
+ 1901  ls -al
+ 1902  cd src/
+ 1903  ls -al
+ 1904  vi api.js 
+ 1905  vi main.jsx 
+ 1906  grep api *
+ 1907  vi components/FileUpload.jsx
+ 1908  cd components/
+ 1909  sl -al
+ 1910  ls -al
+ 1911  cp FileUpload.jsx FileUpload.jsx_2
+ 1912  mv FileUpload.jsx_1 FileUpload.jsx
+ 1913  git diff FileUpload.jsx
+ 1914  cd ../../../aws-saas-backend/
+ 1915  clear
+ 1916  ls -al
+ 1917  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1918  vi jwt_token
+ 1919  vi jwt_token_1.txt 
+ 1920  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1921  history
+ 1922  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1923  which aws
+ 1924  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1925  pwd
+ 1926  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
+ 1927  ls -al
+ 1928  cd src/pages/
+ 1929  ls -al
+ 1930  vi Dashboard.jsx 
+ 1931  cd ../components/
+ 1932  ls -al
+ 1933  mv FileUpload.jsx FileUpload.jsx_1
+ 1934  cp FileUpload.jsx_2 FileUpload.jsx
+ 1935  vi FileUpload.jsx
+ 1936  cat FileUpload.jsx
  1937  clear
- 1938  curl -X GET http://localhost:5000/api/items
- 1939  clear
- 1940  ls -al
- 1941  cd services/
- 1942  ls -al
- 1943  vi dynamoDBService.js
- 1944  cd ..
- 1945  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1946  clear
- 1947  vi middlewares/
- 1948  vi middlewares/authMiddleware.js
- 1949  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1950  vi middlewares/authMiddleware.js
- 1951  vi t1
- 1952  cd middlewares/
- 1953  vi t1
- 1954  diff t1 authMiddleware.js
- 1955  diff t1 authMiddleware.jsmv authMiddleware.js authMiddleware.js_2
- 1956  mv authMiddleware.js authMiddleware.js_2
- 1957  ls -al
- 1958  mv t1 authMiddleware.js
- 1959  vi authMiddleware.js
- 1960  clear
- 1961  cd ..
- 1962  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1963  vi ../aws-saas-frontend/src/
- 1964  vi ../aws-saas-frontend/src/DebugAuth.js
- 1965  vi middlewares/authMiddleware.js
- 1966  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1967  vi middlewares/authMiddleware.js
- 1968  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1969  vi jwt_token_1.txt 
- 1970  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1971  vi middlewares/authMiddleware.js
- 1972  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1973  clear
- 1974  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
- 1975  clear
- 1976  npm run dev -- --host
- 1977  pwd
- 1978  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
- 1979  clear
- 1980  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1981  pwd
- 1982  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1938  cd ..
+ 1939  vi api.js 
+ 1940  vi index.css 
+ 1941  ls
+ 1942  vi main.jsx 
+ 1943  vi App.jsx 
+ 1944  cd ../../aws-saas-backend/
+ 1945  ls -al
+ 1946  vi routes.js
+ 1947  ls -al
+ 1948  vi services/s3Service.js
+ 1949  cat services/s3Service.js
+ 1950  ls
+ 1951  cd services/
+ 1952  ls -al
+ 1953  clear
+ 1954  cd ..
+ 1955  vi routes.js
+ 1956  vi services/s3Service.js
+ 1957  pwd
+ 1958  cd ..
+ 1959  cd aws-saas-frontend/src/components/
+ 1960  vi FileUpload.jsx
+ 1961  ld
+ 1962  cd ..
+ 1963  vi api.js 
+ 1964  vi components/FileUpload.jsx
+ 1965  vi api.js 
+ 1966  ls
+ 1967  cp api.js api.js_1
+ 1968  vi api.js
+ 1969  clear
+ 1970  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1971  clear
+ 1972  vi jwt_token_1.txt 
+ 1973  history
+ 1974  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1975  curl -X GET http://localhost:5000/api/s3/list -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1976  clear
+ 1977  ls -al
+ 1978  vi ../aws-saas-frontend/src/components/FileUpload.jsx
+ 1979  curl -X GET http://52.53.157.10:5000/api/s3/list -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 1980  clear
+ 1981  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 1982  clear
  1983  vi t1
- 1984  pm2 restart index.js --log my_log
- 1985  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1986  pm2 logs
- 1987  pwd
- 1988  vi middlewares/authMiddleware.js
+ 1984  clear
+ 1985  ps -aef | grep pm2
+ 1986  kill -9 136781
+ 1987  ps -aef | grep pm2
+ 1988  pm2 start index.js --log my_log
  1989  pm2 logs
- 1990  clear
- 1991  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
- 1992  clear
- 1993  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1994  vi jwt_token_1.txt 
- 1995  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
- 1996  pwd
+ 1990  vi /home/ubuntu/.pm2/logs/index-error.log
+ 1991  \rm /home/ubuntu/.pm2/logs/index-error.log
+ 1992  \rm my_log 
+ 1993  clear
+ 1994  pm2 restart index.js --log my_log
+ 1995  pm2 logs
+ 1996  clear
  1997  cd AWS-SAAS/AWS-SAAS/aws-saas-frontend
  1998  clear
  1999  npm run dev -- --host
- 2000  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
- 2001  vi t1
- 2002  vi middlewares/authMiddleware.js
- 2003  vi t1
- 2004  vi middlewares/authMiddleware.js
- 2005  history > t1
+ 2000  clear
+ 2001  pwd
+ 2002  cd AWS-SAAS/AWS-SAAS/aws-saas-backend/
+ 2003  cat t1
+ 2004  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 2005  vi jwt_token_1.txt 
+ 2006  curl -X GET http://localhost:5000/api/items -H "Authorization: Bearer $(cat jwt_token_1.txt)"
+ 2007  vi jwt_token_1.txt 
+ 2008  vi t1
+ 2009  history > t1

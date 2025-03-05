@@ -21,36 +21,31 @@ const FileUpload = () => {
             return;
         }
 
+        setUploading(true);
+        const formData = new FormData();
+        formData.append("file", file);
+
         try {
-            // Step 1: Request presigned URL from the backend
-            const response = await fetchWithAuth("/s3/upload", "POST", {
-                fileName: file.name,
-                fileType: file.type,
-            });
+            const response = await fetchWithAuth("/upload", "POST", formData);
 
-            const { uploadURL, fileName } = response;
-
-            // Step 2: Upload file to S3 using presigned URL
-            const s3Response = await fetch(uploadURL, {
-                method: "PUT",
-                body: file,
-                headers: { "Content-Type": file.type },
-            });
-
-            if (!s3Response.ok) throw new Error("S3 Upload Failed");
-
-            alert("File uploaded successfully!");
-            fetchFiles(); // Refresh file list
+            if (response.url) {
+                setFileUrl(response.url);
+                alert("File uploaded successfully!");
+                fetchFiles(); // Refresh file list
+            } else {
+                throw new Error("Upload failed!");
+            }
         } catch (error) {
             console.error("Upload error:", error);
             alert("File upload failed!");
+        } finally {
+            setUploading(false);
         }
     };
 
     const fetchFiles = async () => {
         try {
-            const result = await fetchWithAuth("/s3/list"); // Fetch files from backend
-	    console.log("Files received from backend:", result); // Debugging log
+            const result = await fetchWithAuth("/files"); // Fetch files from backend
             setFiles(result);
         } catch (error) {
             console.error("Error fetching files:", error);
@@ -59,8 +54,7 @@ const FileUpload = () => {
 
     const handleDelete = async (fileKey) => {
         try {
-            //await fetchWithAuth(`/s3/delete/${fileKey}`, "DELETE");
-	    await fetchWithAuth(`/s3/delete/${encodeURIComponent(fileKey)}`, "DELETE"); // Encode fileName to handle special characters
+            await fetchWithAuth(`/files/${fileKey}`, "DELETE");
             setFiles((prevFiles) => prevFiles.filter(file => file.key !== fileKey));
             alert("File deleted successfully!");
         } catch (error) {
@@ -68,19 +62,6 @@ const FileUpload = () => {
             alert("Failed to delete file!");
         }
     };
-
-	/*
-    const handleDelete = async (fileKey) => {
-        try {
-            await fetchWithAuth(`/s3/delete`, "DELETE", { fileName: fileKey }); // Send as body
-            setFiles((prevFiles) => prevFiles.filter(file => file.fileName !== fileKey));
-            alert("File deleted successfully!");
-        } catch (error) {
-            console.error("Error deleting file:", error);
-            alert("Failed to delete file!");
-        }
-    };
-    */
 
     return (
         <div className="flex flex-col items-center p-4">
@@ -106,13 +87,13 @@ const FileUpload = () => {
                 <h3>Uploaded Files:</h3>
                 <ul>
                     {files.map((file) => (
-                        <li key={file.fileName} className="flex justify-between w-80">
+                        <li key={file.key} className="flex justify-between w-80">
                             <a href={file.url} target="_blank" rel="noopener noreferrer" className="text-blue-500">
-                                {file.fileName}
+                                {file.key}
                             </a>
                             <button 
                                 className="bg-red-500 text-white px-2 rounded"
-                                onClick={() => handleDelete(file.fileName)}
+                                onClick={() => handleDelete(file.key)}
                             >
                                 Delete
                             </button>
