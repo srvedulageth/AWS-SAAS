@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getPresignedUrl, uploadFileToS3 } from "../s3Service/s3Service"; // Import services
+import { getPresignedUrl, uploadFileToS3 } from "../s3Service/getPresignedUrl"; // Import services
 import fetchWithAuth from "../api"; // Keep for list and delete functions
 
 const FileUpload = () => {
@@ -45,7 +45,6 @@ const FileUpload = () => {
     const fetchFiles = async () => {
         try {
             const result = await fetchWithAuth("/s3/list"); // Fetch files from backend
-	    console.log("Files received from backend:", result); // Debugging log
             setFiles(result);
         } catch (error) {
             console.error("Error fetching files:", error);
@@ -54,8 +53,8 @@ const FileUpload = () => {
 
     const handleDelete = async (fileKey) => {
         try {
-	    await fetchWithAuth(`/s3/delete/${encodeURIComponent(fileKey)}`, "DELETE"); // Encode fileName to handle special characters
-            setFiles((prevFiles) => prevFiles.filter(file => file.key !== fileKey));
+            await fetchWithAuth(`/s3/delete/${encodeURIComponent(fileKey)}`, "DELETE"); // Encode fileName to handle special characters
+            setFiles((prevFiles) => prevFiles.filter(file => file.fileName !== fileKey));
             alert("File deleted successfully!");
         } catch (error) {
             console.error("Error deleting file:", error);
