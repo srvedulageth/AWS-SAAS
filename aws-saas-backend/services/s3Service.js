@@ -25,6 +25,7 @@ exports.uploadFile = async (req, res) => {
 	    Expires: 300,
         };
 
+        console.log("Backend s3 Upload:"); // Debugging
         const uploadURL = await s3.getSignedUrlPromise("putObject", params);
         res.json({ uploadURL, fileName });
     } catch (error) {
@@ -47,6 +48,7 @@ exports.listFiles = async (req, res) => {
             size: file.Size,
         }));
 
+        console.log("Backend s3 listing files:"); // Debugging
         res.json(files);
     } catch (error) {
         console.error("S3 List Error:", error);

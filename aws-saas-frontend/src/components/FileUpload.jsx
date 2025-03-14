@@ -42,6 +42,7 @@ const FileUpload = () => {
         }
     };
 
+/*
     const fetchFiles = async () => {
         try {
             const result = await fetchWithAuth("/s3/list"); // Fetch files from backend
@@ -52,11 +53,94 @@ const FileUpload = () => {
         }
     };
 
+    const fetchFiles = async () => {
+        try {
+            const response = await fetch("https://zd9b7so052.execute-api.us-west-1.amazonaws.com/mysaasapistage-1/s3");
+            if (!response.ok) throw new Error("Failed to fetch files");
+            const result = await response.json();
+            console.log("Files received:", result);
+            setFiles(result);
+        } catch (error) {
+            console.error("Error fetching files:", error);
+        }
+    };
+*/
+
+    const fetchFiles = async () => {
+        try {
+            const response = await fetch("https://zd9b7so052.execute-api.us-west-1.amazonaws.com/mysaasapistage-1/s3", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Origin": "http://52.53.157.10:5173", // 🔹 Ensures correct origin
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const result = await response.json();
+            console.log("Files received from API Gateway:", result);
+            setFiles(result);
+        } catch (error) {
+            console.error("Error fetching files:", error);
+        }
+    };
+
+
+	/*
     const handleDelete = async (fileKey) => {
         try {
-	    await fetchWithAuth(`/s3/delete/${encodeURIComponent(fileKey)}`, "DELETE"); // Encode fileName to handle special characters
-            setFiles((prevFiles) => prevFiles.filter(file => file.key !== fileKey));
+	    await fetchWithAuth(`/s3/${encodeURIComponent(fileKey)}`, "DELETE"); // Encode fileName to handle special characters
+            setFiles((prevFiles) => prevFiles.filter(file => file.fileName !== fileKey));
             alert("File deleted successfully!");
+        } catch (error) {
+            console.error("Error deleting file:", error);
+            alert("Failed to delete file!");
+        }
+    };
+
+    const handleDelete = async (fileKey) => {
+        try {
+            // Use the correct path /s3/{fileKey} to delete the file
+            const response = await fetchWithAuth(`/s3/${encodeURIComponent(fileKey)}`, {
+            method: "DELETE",
+            });
+
+            // If the response is not successful, throw an error
+            if (!response.ok) {
+                throw new Error("Failed to delete file");
+            }
+
+            // Remove the deleted file from the list
+            setFiles((prevFiles) => prevFiles.filter(file => file.fileName !== fileKey));
+
+            alert("File deleted successfully!");
+        } catch (error) {
+            console.error("Error deleting file:", error);
+            alert("Failed to delete file!");
+        }
+    };
+    */
+
+    const handleDelete = async (fileKey) => {
+        try {
+            // Ensure the URL is correctly formatted
+            const url = `/s3/${encodeURIComponent(fileKey)}`;
+
+            // Correctly pass method and headers to fetchWithAuth
+            const response = await fetchWithAuth(url, "DELETE");
+	    console.log("handleDelete:", response);
+
+	    if (response.message && response.message.includes('deleted successfully')) {
+               // Successfully deleted, update state
+               //setFiles((prevFiles) => prevFiles.filter(file => file.key !== fileKey));
+               alert("File deleted successfully!");
+               fetchFiles(); // Refresh file list
+           } else {
+               throw new Error("File deletion failed");
+           }
         } catch (error) {
             console.error("Error deleting file:", error);
             alert("Failed to delete file!");

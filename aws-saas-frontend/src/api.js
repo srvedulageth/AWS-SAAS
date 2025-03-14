@@ -1,6 +1,7 @@
 import { fetchAuthSession } from "aws-amplify/auth";
 
-const API_URL = import.meta.env.VITE_BACKEND_URL;
+//const API_URL = import.meta.env.VITE_BACKEND_URL;
+const API_URL = "https://zd9b7so052.execute-api.us-west-1.amazonaws.com/mysaasapistage-1"; // API Gateway URL
 
 const fetchWithAuth = async (endpoint, method = "GET", body = null) => {
     try {
