@@ -1,15 +1,19 @@
 import axios from "axios";
+import fetchWithAuth from "../api";
 
-const API_ENDPOINT = "https://zd9b7so052.execute-api.us-west-1.amazonaws.com/mysaasapistage-1/s3"; // Replace with actual API Gateway URL
+const API_ENDPOINT = `${import.meta.env.VITE_API_BASE_URL}/s3`;
+console.log(API_ENDPOINT);
 
 export const getPresignedUrl = async (file) => {
     try {
-        const response = await axios.post(API_ENDPOINT, {
+        const data = {
             fileName: file.name,
             fileType: file.type,
-        });
+        };
 
-        return response.data.uploadURL || null;
+        const response = await fetchWithAuth("/s3", "POST", data);
+
+        return response.uploadURL || null;
     } catch (error) {
         console.error("Error getting pre-signed URL:", error);
         return null;

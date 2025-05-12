@@ -1,7 +1,7 @@
 import { fetchAuthSession } from "aws-amplify/auth";
 
-//const API_URL = import.meta.env.VITE_BACKEND_URL;
-const API_URL = "https://zd9b7so052.execute-api.us-west-1.amazonaws.com/mysaasapistage-1"; // API Gateway URL
+const API_INVOKE_URL = import.meta.env.VITE_API_BASE_URL; // API Gateway URL
+console.log(API_INVOKE_URL);
 
 const fetchWithAuth = async (endpoint, method = "GET", body = null) => {
     try {
@@ -25,7 +25,7 @@ const fetchWithAuth = async (endpoint, method = "GET", body = null) => {
             options.body = body instanceof FormData ? body : JSON.stringify(body);
         }
 
-        const response = await fetch(`${API_URL}${endpoint}`, options);
+        const response = await fetch(`${API_INVOKE_URL}${endpoint}`, options);
         const data = await response.json();
 
         if (!response.ok) {
